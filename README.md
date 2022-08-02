@@ -1,7 +1,10 @@
-Capstone Project: Kurdlancer Application and Website
-Devloper: Sara Sardar Hassan
+# Kurdlancer Application and Website
+
+# Devloped by: Sara Sardar Hassan
 
 ---
+
+## Features
 
 Project overview:
 Kurdlance (Mobile application or website ) is for a freelancing job ,
@@ -45,3 +48,13 @@ Tailwind
 My Role
 UX/UI Designer
 Front-End Devloper
+
+This is a test ecommerce project built for learning purposes.
+
+- Authentication
+- State Management with RTK
+- Local Storage
+- Shopping Cart
+- Search and Filtering
+
+## API Used [Faker Store Api](https://fakestoreapi.com/docs).
