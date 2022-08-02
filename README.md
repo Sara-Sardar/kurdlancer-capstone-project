@@ -32,10 +32,6 @@ The goal of the project is to create an easy freelancing website/mobile applicat
 ---
 
 The tools:
-Adope XD
-Figma
-Microsoft Power Point
-Microsoft Word
 VS-code
 React,React Dom,Link
 Axios
@@ -48,13 +44,5 @@ Tailwind
 My Role
 UX/UI Designer
 Front-End Devloper
-
-This is a test ecommerce project built for learning purposes.
-
-- Authentication
-- State Management with RTK
-- Local Storage
-- Shopping Cart
-- Search and Filtering
 
 ## API Used [Faker Store Api](https://fakestoreapi.com/docs).
