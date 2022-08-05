@@ -4,10 +4,10 @@ const links =[
     {name: 'Home', url: '/'},
     {name: 'Freelancers', url: '/freelancers'},   
     {name: 'Jobs', url: '/jobs'},
-    {name: 'Post Jobs', url: '/PostJobs'},    
+    {name: 'Post Jobs', url: '/postjobs'},    
 ];
  
-export default function NavigationBar() {
+export default function NavBar() {
   return (
     <div>
   
@@ -17,9 +17,9 @@ export default function NavigationBar() {
        <a href="/" className="text-2xl mx-2 p-6 font-bold hover:underline ">KURDLANCER</a>
                 
         <ul className="flex  py-4 ">
-           {links.map((link)=>{
+           {links.map((link,index)=>{
               return(
-          <li className="text-xl mx-2 font-semibold  hover:underline rounded-md  py-2">
+          <li className="text-xl mx-2 font-semibold  hover:underline rounded-md  py-2" key={index}>
                 <Link to={link.url}>{link.name}</Link>
           </li>
 
@@ -37,3 +37,9 @@ export default function NavigationBar() {
     </div>
   );
 }
+
+
+
+
+
+
