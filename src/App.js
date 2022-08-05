@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css';
-import NavBar from './components/NavBar';
+//import NavBar from './components/NavBar';
 import {Route,Routes} from "react-router-dom";
 import Freelancers from "./pages/Freelancers";
 import Jobs from './pages/Jobs';
@@ -14,7 +14,7 @@ export default function App() {
   return (
 
     <div>
-          <NavBar/>
+          
           
           <Routes>
             <Route path="/" element={<Home/>} />

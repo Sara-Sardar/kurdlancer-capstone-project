@@ -57,14 +57,14 @@ export default function NavBar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
-                  type="button"
+                <Link
+                  to="/signin"
                   className="bg-amber-400 px-3 py-2 text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                 >
                   <span className="sr-only">View notifications</span>
                   {/*<BellIcon className="h-6 w-6" aria-hidden="true" />*/}
                   SignIn
-                </button>
+                </Link>
 
                 {/* Profile dropdown */}
                 {/*<Menu as="div" className="ml-3 relative">

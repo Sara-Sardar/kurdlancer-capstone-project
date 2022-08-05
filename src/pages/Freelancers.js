@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Layout from '../layouts/MainLayout';
 export default function Freelancers() {
-  return (
+  return <Layout>
     
-  <div className='m-6  text-white bg-orange-200 '>Freelancers
+  <div className='m-6  text-white  '>
         <div className='container mx-auto h-96  p-10 rounded-md  bg-amber-400 '>
           <div className=' text-white md:flex flex space-x-96'>
               <div className='p-10 m-10'>
@@ -34,6 +34,6 @@ export default function Freelancers() {
           </div>
         </div>
   </div>
-    
-  )
+  </Layout>;
+  
 }
