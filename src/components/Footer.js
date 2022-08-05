@@ -1,37 +1,34 @@
-import { Link } from 'react-router-dom';
+import React from 'react'
+import './App.css';
+import NavBar from './components/NavBar';
+import {Route,Routes} from "react-router-dom";
+import Freelancers from "./pages/Freelancers";
+import Jobs from './pages/Jobs';
+import PostJobs from './pages/PostJobs';
+import Home from './pages/Home';
+//import Footer from './components/Footer';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
 
-const links =[
-    {name: 'Home', url: '/'},
-    {name: 'Contact Us', url: '/Contactus'},   
-    {name: 'About Us', url: '/Aboutus'},
-        
-];
- 
-export default function Footer() {
+export default function App() {
   return (
-  
-    <nav className=" text-amber-400 shadow-md  flex justify-between items-center w-screen">
-       
-          <div className="flex "> 
-            <a href="/" className="text-2xl mx-2 p-6 font-bold hover:underline ">KURDLANCER</a>
-             
-                  <ul className="flex  py-4 ">
-                        {links.map((link,index)=>{
-                          return(
-                      <li className="text-xl mx-2 font-semibold  hover:underline rounded-md  py-2" key={index}>
-                            <Link to={link.url}>{link.name}</Link>
-                      </li>
 
-                          );
-                        })}
-                  </ul>
-            </div>
-         
-        <div className="text-white mr-11 ">
-        <button className="p-2 ml-4 bg-amber-400 shadow-md rounded-md hover:bg-amber-500 font-semibold">FB</button>
-        <button className="p-2 ml-4 bg-amber-400 shadow-md rounded-md hover:bg-amber-500 font-semibold">LinkedIn</button>
-        <button className="p-2 ml-4 bg-amber-400 shadow-md rounded-md hover:bg-amber-500 font-semibold">GitHub</button>
-        </div>
-    </nav>
+    <div>
+          <NavBar/>
+          
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/freelancers" element={<Freelancers/>} />
+            <Route path="/jobs" element={<Jobs/>} />
+            <Route path="/postjobs" element={<PostJobs/>} />
+            <Route path="/aboutus" element={<AboutUs/>} />
+            <Route path="/contactus" element={<ContactUs/>} />
+          </Routes>
+
+
+        {/* <Footer/> */}
+          
+    </div>
+  
   );
 }

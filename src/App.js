@@ -6,7 +6,7 @@ import Freelancers from "./pages/Freelancers";
 import Jobs from './pages/Jobs';
 import PostJobs from './pages/PostJobs';
 import Home from './pages/Home';
-import Footer from './components/Footer';
+//import Footer from './components/Footer';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 
@@ -26,7 +26,7 @@ export default function App() {
           </Routes>
 
 
-          <Footer/>
+        {/* <Footer/> */}
           
     </div>
   

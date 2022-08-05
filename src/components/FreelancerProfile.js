@@ -2,7 +2,6 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-import { Link } from 'react-router-dom';
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
@@ -35,23 +34,23 @@ export default function NavBar() {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                <Link className="text-md flex-shrink-0 flex items-center text-white hover:amber-500 font-medium " to='/'>
+                <a className="text-md flex-shrink-0 flex items-center text-white hover:amber-500 font-medium " href='/'>
                  KURDLANCER
-                </Link>
+                </a>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <Link
+                      <a
                         key={item.name}
-                        to={item.href}
+                        href={item.href}
                         className={classNames(
-                          item.current ? 'bg-amber-400 hover:bg-amber-300 text-white' : 'text-gray-100 hover:bg-amber-400 hover:text-white',
+                          item.current ? 'bg-amber-500 text-white' : 'text-gray-100 hover:bg-amber-400 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </Link>
+                      </a>
                     ))}
                   </div>
                 </div>
@@ -59,15 +58,14 @@ export default function NavBar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 <button
                   type="button"
-                  className="bg-amber-400 px-3 py-2 text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
+                  className="bg-amber-400 p-1 rounded-full text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                 >
                   <span className="sr-only">View notifications</span>
-                  {/*<BellIcon className="h-6 w-6" aria-hidden="true" />*/}
-                  SignIn
+                  <BellIcon className="h-6 w-6" aria-hidden="true" />
                 </button>
 
                 {/* Profile dropdown */}
-                {/*<Menu as="div" className="ml-3 relative">
+                <Menu as="div" className="ml-3 relative">
                   <div>
                     <Menu.Button className="bg-amber-400 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
                       <span className="sr-only">Open user menu</span>
@@ -120,7 +118,7 @@ export default function NavBar() {
                       </Menu.Item>
                     </Menu.Items>
                   </Transition>
-                </Menu>*/}
+                </Menu>
               </div>
             </div>
           </div>
@@ -130,8 +128,8 @@ export default function NavBar() {
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as={Link}
-                  to={item.href}
+                  as="a"
+                  href={item.href}
                   className={classNames(
                     item.current ? 'bg-amber-500 text-white' : 'text-white hover:bg-amber-400 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
