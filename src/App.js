@@ -10,6 +10,10 @@ import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Signin from './pages/Signin';
+import Signup from './pages/Signup';
+
+
+
 export default function App() {
   return (
 
@@ -23,7 +27,8 @@ export default function App() {
             <Route path="/postjobs" element={<PostJobs/>} />
             <Route path="/aboutus" element={<AboutUs/>} />
             <Route path="/contactus" element={<ContactUs/>} />
-            <Route path="signin" element={<Signin />} />
+            <Route path="/signin" element={<Signin />} />
+            <Route path="/signup" element={<Signup />} />
           </Routes>
 
 
