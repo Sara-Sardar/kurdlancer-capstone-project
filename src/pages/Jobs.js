@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../layouts/MainLayout';
+import { Link } from 'react-router-dom';
 
 export default function Jobs() {
   return <Layout>
@@ -19,15 +20,15 @@ export default function Jobs() {
         
 
         <div className="mt-10 ">
-          <button className="shadow-md hover:shadow-lg  bg-blue-900 hover:bg-blue-800 text-white px-6 py-4 rounded-lg text-xl font-semibold mr-4">
+          <Link to="/freelancers" className="shadow-md hover:shadow-lg  bg-blue-900 hover:bg-blue-800 text-white px-6 py-4 rounded-lg text-xl font-semibold mr-4">
            Freelancers
-          </button>
-          <button className="shadow-md hover:shadow-lg hover:text-amber-500 bg-white text-blue-900 px-6 py-4 rounded-lg text-xl font-semibold mr-4">
+          </Link>
+          <Link to="/jobs" className="shadow-md hover:shadow-lg hover:text-amber-500 bg-white text-blue-900 px-6 py-4 rounded-lg text-xl font-semibold mr-4">
             Jobs
-          </button>
-          <button className="shadow-md hover:shadow-lg hover:text-amber-500 bg-white text-blue-900 px-6 py-4 rounded-lg text-xl font-semibold">
+          </Link>
+          <Link to="/postjobs" className="shadow-md hover:shadow-lg hover:text-amber-500 bg-white text-blue-900 px-6 py-4 rounded-lg text-xl font-semibold">
             Post Jobs
-          </button>
+          </Link>
         </div>
       </div>
       <div className="bg-red-300">
