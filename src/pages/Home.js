@@ -20,11 +20,11 @@ export default function Home() {
       
         {' '}
         <div className=" flex flex-col  justify-center">
-       <h2  className="text-xl tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl ">
+       <h2  className="text-4xl tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl ">
          For Clients, Make it real with the best 
-          <span className="text-blue-900"> Freelancers,</span>
+          <span className="text-blue-900 "> Freelancers,</span>
         </h2></div>
-        <p className="text-md text-blue-900 mt-3">
+        <p className="text-2xl text-blue-900 mt-3  font-medium ">
         Hire a pro for any skills.
         </p>
         
@@ -45,7 +45,8 @@ export default function Home() {
           <span className="text-blue-900"> Make Money.</span>
         </h2></div>
         
-      </div>
+        </div>
+      <div className='grid grid-cols-3 md:grid-cols-1 mt-4 md:mt-4 sm:grid-cols-1 '></div>
     </div>
 
 
@@ -63,6 +64,9 @@ export default function Home() {
             </div>
         </div>
 <AddSkils/>
+
+
+    
    </Layout>;}
 
 
