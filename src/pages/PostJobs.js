@@ -35,7 +35,7 @@ export default function PostJobs() {
       <div className="bg-red-300">
         <img
           className="h-full w-auto object-cover "
-          src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" 
+          src="https://images.unsplash.com/photo-1601933974703-d25155828f40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" 
           alt="woman holding bags while shopping"
         />
       </div>
@@ -59,7 +59,7 @@ export default function PostJobs() {
               
 
                 <div className="md:shrink-0">
-                  <img className="h-96 w-full object-cover md:h-full rounded-md md:w-96"  src="https://images.unsplash.com/photo-1598257006458-087169a1f08d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="immage not loading"/>
+                  <img className="h-96 w-full object-cover md:h-full rounded-md md:w-96"  src="https://images.unsplash.com/photo-1601933974703-d25155828f40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="immage not loading"/>
                 </div>
 
           </div>

@@ -20,7 +20,7 @@ export default function HeroSection() {
         </p>
         
 
-        <div className="mt-10 ">
+        <div className="mt-12 pt-5">
           <Link to="/freelancers" className="shadow-md hover:shadow-lg  bg-blue-900 hover:bg-blue-800 text-white px-6 py-4 rounded-lg text-xl font-semibold mr-4">
            Freelancers
           </Link>

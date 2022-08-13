@@ -11,7 +11,7 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
-
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 
 export default function App() {
