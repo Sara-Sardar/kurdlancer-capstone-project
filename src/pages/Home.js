@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '../layouts/MainLayout';
 import HeroSection from '../components/HeroSection';
 import AddSkils from '../components/AddSkils';
-import Fcard from './Fcard';
+import FreelancerCarasoul from '../components/FreelancerCarasoul';
 
 
 
@@ -15,7 +15,7 @@ export default function Home() {
 
 
     {/* freelancer section*/}
-    <div className='container mx-auto rounded-md bg-amber-400 '>
+    <div className='container mx-auto rounded-md bg-amber-400 pb-2'>
     <div className="mt-11 pt-8 pl-8 pb-4">
       
         {' '}
@@ -29,7 +29,7 @@ export default function Home() {
         </p>
         
       </div>
-      <div className='grid grid-cols-3 md:grid-cols-1 mt-4 md:mt-4 sm:grid-cols-1 '><Fcard/></div>
+      <div className='grid grid-cols-3 md:grid-cols-1 mt-4 md:mt-4 sm:grid-cols-1 '><FreelancerCarasoul/></div>
     </div>
 
 
