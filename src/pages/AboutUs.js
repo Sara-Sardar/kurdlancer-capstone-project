@@ -41,7 +41,7 @@ export default function AboutUs() {
             <div className=' md:flex flex justify-around  space-x-10  '>
                 
                 <div className="md:shrink-0">
-                  <img className="h-60 w-60  md:h-60 object-cover md:w-60 rounded-full"  src="./img" alt="not loading"/>
+                  <img className="h-60 w-60  md:h-60 object-contain md:w-60 rounded-full "  src="images/sara.jpeg" alt="not loading"/>
             </div>
 
             <div>
