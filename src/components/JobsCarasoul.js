@@ -112,7 +112,7 @@ export default function JobsCarasoul() {
       
                         <Link to='/' className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                             
-                            <img className="rounded-t-lg h-72 w-96 object-cover" src="https://amusecards.com/wp-content/uploads/2021/04/fastlink-480x330.jpg" alt="not loaded" />
+                            <img className="rounded-t-lg h-72 w-96 object-cover" src="https://is4-ssl.mzstatic.com/image/thumb/Purple115/v4/2d/c1/cf/2dc1cf7b-399c-6021-b253-2185bfe73148/source/512x512bb.jpg" alt="not loaded" />
                         
                         
                             

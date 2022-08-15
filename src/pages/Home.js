@@ -1,13 +1,14 @@
 import React from 'react';
 import Layout from '../layouts/MainLayout';
 import HeroSection from '../components/HeroSection';
-import AddSkils from '../components/AddSkils';
+//import AddSkils from '../components/AddSkils';
 import FreelancerCarasoul from '../components/FreelancerCarasoul';
 import JobsCarasoul from '../components/JobsCarasoul';
-
-
+import Categories from '../components/Categories';
+//import Footer from '../components/Footer';
 export default function Home() {
   return <Layout>
+    <Categories/>
     <HeroSection />
     
 
@@ -63,7 +64,7 @@ export default function Home() {
               
             </div>
         </div>
-<AddSkils/>
+
 
 
     

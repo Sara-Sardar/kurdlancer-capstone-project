@@ -16,10 +16,10 @@ const navigation = [
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
-
+{/*fixed w-full z-20 top-0 left-0*/}
 export default function NavBar() {
   return (
-    <Disclosure as="nav" className="bg-amber-500 ">
+    <Disclosure as="nav" className="bg-amber-500 "> 
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
