@@ -5,3 +5,7 @@
 body {
   background-color: rgb(254, 254, 254);
 }
+
+
+.menu{position:absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate3d(264.4px, 62px, 0px);
+}

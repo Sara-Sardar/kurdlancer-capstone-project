@@ -1,7 +1,7 @@
 
 import Layout from '../layouts/MainLayout';
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
@@ -45,10 +45,10 @@ export default function ContactUS() {
   return (
     <Layout>
     <div className='m-6  text-white '>
-    <div className='container mx-auto h-60  p-10 rounded-md  bg-amber-400 '>
+    <div className='container mx-auto h-60  p-12 rounded-md  bg-amber-400 '>
       <div className=' text-white md:flex flex  space-x-96'>
           <div className='p-5 my-5 mx-10'>
-                      <p className=' text-4xl font-medium py-4'>Contact Us</p>
+                      <p className=' text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-5xl'>Contact Us</p>
                 </div>
               
 
@@ -59,8 +59,8 @@ export default function ContactUS() {
         <div className='container mx-auto h-screen p-10 rounded-md  shadow-md my-10 '>
           <div className='   '>
               <div className=''>
-                    <p className=' text-4xl text-amber-400 font-medium py-4'>Feedback Form:</p>
-                    <p className=' text-blue-900'>Fill this form , give us your opinion about us.</p>
+                    <p className='  text-2xl tracking-tight font-bold text-amber-400 sm:text-2xl md:text-4xl pb-3'>Feedback Form:</p>
+                    <p className='text-lg text-blue-900'>Fill this form , give us your opinion about us.</p>
                     {/*form*/}
 
 <div className=" p-10 flex items-center justify-center ">
@@ -77,7 +77,7 @@ export default function ContactUS() {
            <input className='bg-gray-100 rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white' type="text" name="password" id="password" value={form.text || ''}
               />
             <label className='text-amber-400 font-medium' htmlFor="usernsme ">Feedback:</label> 
-            <textarea className='bg-gray-100 rounded-md mb-3 mt-1 text-blue-900  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"' value=' Write your feedback here...' onChange={handleChange} />
+            <textarea className='bg-gray-100 rounded-md mb-3 mt-1 text-gray-400  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"' value=' Write your feedback here...' onChange={handleChange} />
         
         <button className="bg-amber-400 px-3 py-2 text-lg font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">Submit</button>
         

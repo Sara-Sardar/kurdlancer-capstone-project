@@ -1,13 +1,5 @@
 import React from 'react'
-//import './App.css';
-//import NavBar from './components/NavBar';
-//import {Route,Routes} from "react-router-dom";
-//import Freelancers from "./pages/Freelancers";
-//import Jobs from './pages/Jobs';
-//import PostJobs from './pages/PostJobs';
-//import Home from './pages/Home';
-//import AboutUs from './pages/AboutUs';
-//import ContactUs from './pages/ContactUs';
+
 
 export default function App() {
   return (
@@ -15,7 +7,7 @@ export default function App() {
     <div>
         
 
-        <footer className="p-4 bg-amber-500 sm:p-6 dark:bg-gray-900 mt-20 ">
+        <footer className="p-4 bg-amber-500 sm:p-6 dark:bg-gray-900 mt-10 ">
     <div className="md:flex md:justify-between ">
         <div className="mb-6 md:mb-0 flex flex-col  ">
             
@@ -78,7 +70,7 @@ export default function App() {
     </div>
     <hr className="my-6 border-white sm:mx-auto dark:border-gray-700 lg:my-8"/>
     <div className="sm:flex sm:items-center sm:justify-between">
-        <span className="text-sm text-blue-900 sm:text-center dark:blue-900">© 2022 <a href="https://flowbite.com/" className="hover:underline">Kurdlancer™</a>. All Rights Reserved.
+        <span className="text-sm text-white sm:text-center dark:blue-900">© 2022 <a href="https://flowbite.com/" className="hover:underline">Kurdlancer™</a>. All Rights Reserved.
         </span>
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <a href="https://www.facebook.com/login/" className="text-white hover:text-blue-900 dark:hover:text-white">

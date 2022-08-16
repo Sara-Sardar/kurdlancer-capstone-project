@@ -1,8 +1,8 @@
-//import {Signin} from './app/slices/authSlice';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import Layout from '../layouts/MainLayout'
 
 export default function Signin() { 
   const dispatch = useDispatch();
@@ -28,8 +28,9 @@ export default function Signin() {
     console.log(form);
   }
   return (
+    <Layout>
     
-       <div className="bg-amber-500 min-h-screen p-10 flex items-center justify-center">
+       <div className="bg-amber-500 min-h-screen p-10 flex items-center justify-center mt-10">
       <div className="container mx-auto flex items-center justify-center">
         <div className="bg-white p-10 rounded-lg shadow-xl w-96">
          <form className='grid grid-cols-1' onSubmit={submitHandler} >
@@ -58,6 +59,6 @@ export default function Signin() {
         </div>
       </div>
     </div>
-    
-  )
+    </Layout>
+  );
 }
