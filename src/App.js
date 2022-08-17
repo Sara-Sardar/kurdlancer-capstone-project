@@ -12,6 +12,11 @@ import ContactUs from './pages/ContactUs';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import Choose from './pages/Choose';
+import FreelancersProfile from './pages/FreelancersProfile';
+import CompanyProfile from './pages/CompanyProfile';
+import JobInfo from './pages/JobInfo';
+import FreelancerInfo from './pages/FreelancerInfo';
 
 
 export default function App() {
@@ -29,6 +34,12 @@ export default function App() {
             <Route path="/contactus" element={<ContactUs/>} />
             <Route path="/signin" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
+            <Route path="/choose" element={<Choose />} />
+            <Route path="/freelanecersprofile" element={<FreelancersProfile/>} />
+            <Route path="/companyprofile" element={<CompanyProfile/>} />
+            <Route path="/jobinfo" element={<JobInfo/>} />
+            <Route path="/freelancerinfo" element={<FreelancerInfo/>} />
+            
           </Routes>
 
 

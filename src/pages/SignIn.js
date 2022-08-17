@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import Layout from '../layouts/MainLayout'
-
+import FreelancersProfile from './FreelancersProfile';
 export default function Signin() { 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ export default function Signin() {
            <input className='bg-gray-100 rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"' type="text" name="password" id="password" value={form.password || ''}
               onChange={onChangeHandler} />
         
-        <button className="bg-amber-400 px-3 py-2 text-lg font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">Signin</button>
+        <Link to="/freelanecersprofile" className="bg-amber-400 pl-32 px-3 py-2 text-lg font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">Signin</Link>
         
         
         <div className="mt-5 text-sm text-gray-500 flex items-center justify-center flex-col">

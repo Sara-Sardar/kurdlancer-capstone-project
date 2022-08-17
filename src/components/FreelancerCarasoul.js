@@ -44,7 +44,7 @@ export default function
 
                 {/*card2*/}
                 
-                <Link to='/' className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md ">
+                <Link to='./freelancers' className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md ">
                         
                         <img className="rounded-t-lg h-72 w-96 object-cover" src="https://images.unsplash.com/photo-1462804993656-fac4ff489837?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="not loaded" />
                         
@@ -64,7 +64,7 @@ export default function
 
                 {/*card3*/}
                 
-                <Link to='/' className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md 0">
+                <Link to='./freelancers' className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md 0">
                         
                         <img className="rounded-t-lg h-72 w-96 object-cover" src="https://images.unsplash.com/photo-1627660692856-bc032e058cc2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" alt="not loaded" />
                     
@@ -84,7 +84,7 @@ export default function
 
                 {/*card4*/}
                 
-                <Link to='/' className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <Link to='./freelancers' className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                         
                         <img className="rounded-t-lg h-72 w-96 object-cover" src="https://images.unsplash.com/photo-1589571894960-20bbe2828d0a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80" alt="not loaded" />
                     
@@ -111,7 +111,7 @@ export default function
 
                         {/*card1*/}
       
-                        <Link to='/' className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <Link to='./freelancers' className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                             
                             <img className="rounded-t-lg h-72 w-96 object-cover" src="https://images.unsplash.com/photo-1527565290982-018bcfdbee74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="not loaded" />
                         
@@ -133,7 +133,7 @@ export default function
 
                 {/*card2*/}
                 
-                <Link to='/' className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <Link to='./freelancers' className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                         
                         <img className="rounded-t-lg h-72 w-96 object-cover" src="https://images.unsplash.com/photo-1541823709867-1b206113eafd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="not loaded" />
                     
@@ -153,7 +153,7 @@ export default function
 
                 {/*card3*/}
                 
-                <Link to='/' className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <Link to='./freelancers' className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                         
                         <img className="rounded-t-lg h-72 w-96 object-cover" src="https://images.unsplash.com/photo-1520423465871-0866049020b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="not loaded" />
                     
@@ -174,7 +174,7 @@ export default function
 
                      {/*card4*/}
                 
-                     <Link to='/' className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                     <Link to='./freelancers' className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                         
                         <img className="rounded-t-lg h-72 w-96 object-cover" src="https://images.unsplash.com/photo-1582015752624-e8b1c75e3711?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="not loaded" />
                     
@@ -202,7 +202,7 @@ export default function
 
                         {/*card1*/}
       
-                        <Link to='/' className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                        <Link to='./freelancers' className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                             
                             <img className="rounded-t-lg h-72 w-96 object-cover" src="https://images.unsplash.com/photo-1610631066894-62452ccb927c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80" alt="not loaded" />
                         
@@ -224,7 +224,7 @@ export default function
 
                 {/*card2*/}
                 
-                <Link to='/' className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <Link to='./freelancers' className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                         
                         <img className="rounded-t-lg h-72 w-96 object-cover" src="https://images.unsplash.com/photo-1573497161529-95eb65b7a2fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="not loaded" />
                     
@@ -244,7 +244,7 @@ export default function
 
                 {/*card3*/}
                 
-                <Link to='/' className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                <Link to='./freelancers' className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                         
                         <img className="rounded-t-lg h-72 w-96 object-cover" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80" alt="not loaded" />
                     
@@ -266,7 +266,7 @@ export default function
 
                   {/*card4*/}
                 
-                  <Link to='/' className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+                  <Link to='./freelancers' className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                         
                         <img className="rounded-t-lg h-72 w-96 object-cover" src="https://images.unsplash.com/photo-1587732279092-23ff8f3573b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80" alt="not loaded" />
                     
