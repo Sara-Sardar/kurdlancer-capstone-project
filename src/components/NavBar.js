@@ -1,8 +1,9 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
-import { Disclosure } from '@headlessui/react'
+import { useState , Fragment ,useEffect} from 'react';
+import { Disclosure } from '@headlessui/react';
 import {  MenuIcon, XIcon } from '@heroicons/react/outline'
 import { Link, NavLink } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux'
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
@@ -16,10 +17,17 @@ const navigation = [
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
+
 {/*fixed w-full z-20 top-0 left-0*/}
 export default function NavBar() {
+  const auth = useSelector((state) => state.auth.isAuthenticated);
+  useEffect(()=>{
+    console.log('the state of auth is :',auth)
+},[])
+
   return (
     <Disclosure as="nav" className="bg-amber-500 "> 
+    
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -58,14 +66,26 @@ export default function NavBar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                {auth ? 
                 <Link
                   to="/signin"
                   className="bg-amber-400 px-3 py-2 text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                 >
                   <span className="sr-only">View notifications</span>
                   {/*<BellIcon className="h-6 w-6" aria-hidden="true" />*/}
-                  SignIn
-                </Link>
+                  SignOut
+                </Link>: 
+                 <Link
+                 to="/signin"
+                 className="bg-amber-400 px-3 py-2 text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
+               >
+                 <span className="sr-only">View notifications</span>
+                 {/*<BellIcon className="h-6 w-6" aria-hidden="true" />*/}
+                 SignIn
+               </Link>
+               }
+
+
 
                 {/* Profile dropdown */}
                 {/*<Menu as="div" className="ml-3 relative">

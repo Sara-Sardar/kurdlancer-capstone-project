@@ -37,8 +37,8 @@ export default function Choose() {
           <h2 className='text-center mb-5 text-2xl font-medium text-amber-400'>Create Account As:</h2>
           
         
-        <Link to="/freelanecersprofile" className="bg-amber-400 pl-24 px-3 py-2 ml-5 text-lg font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">Freelancer .</Link>
-        <Link to="/companyprofile" className="bg-amber-400 pl-16  px-3 py-2 ml-5 text-lg font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">Company / Indivisual</Link>
+        <Link to="/createprofile" className="bg-amber-400 pl-24 px-3 py-2 ml-5 text-lg font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">Freelancer .</Link>
+        <Link to="/createprofile" className="bg-amber-400 pl-16  px-3 py-2 ml-5 text-lg font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">Company / Indivisual</Link>
        
     
          </form>

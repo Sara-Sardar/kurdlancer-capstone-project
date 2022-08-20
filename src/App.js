@@ -17,6 +17,7 @@ import FreelancersProfile from './pages/FreelancersProfile';
 import CompanyProfile from './pages/CompanyProfile';
 import JobInfo from './pages/JobInfo';
 import FreelancerInfo from './pages/FreelancerInfo';
+import CreateProfile from './pages/CreateProfile';
 
 
 export default function App() {
@@ -35,11 +36,11 @@ export default function App() {
             <Route path="/signin" element={<Signin />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/choose" element={<Choose />} />
-            <Route path="/freelanecersprofile" element={<FreelancersProfile/>} />
+            <Route path="/freelancersprofile" element={<FreelancersProfile/>} />
             <Route path="/companyprofile" element={<CompanyProfile/>} />
             <Route path="/jobinfo" element={<JobInfo/>} />
             <Route path="/freelancerinfo" element={<FreelancerInfo/>} />
-            
+            <Route path="/createprofile" element={<CreateProfile/>} />
           </Routes>
 
 

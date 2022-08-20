@@ -1,10 +1,23 @@
-import React from 'react'
+
+
 import Layout from '../layouts/MainLayout';
 import { Link } from 'react-router-dom';
 import AllFreelancers from '../components/AllFreelancers';
-
+import LoadingSpinner from '../components/LoadingSpinner';
+import React, { useEffect, useState } from 'react';
 export default function Freelancers() {
-  return <Layout>
+    const [isLoading, setIsLoading] = useState(true);
+    if (isLoading) {
+        return (
+          <Layout>
+            <LoadingSpinner />
+          </Layout>
+        );
+    } 
+      
+  return ( 
+  <Layout>
+    
     <div className="container rounded-md  bg-amber-400 mx-auto grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-10 ">
       <div className=" mt-11 p-8">
         {' '}
@@ -331,6 +344,7 @@ export default function Freelancers() {
           
         </div>
   
-  </Layout>;
- 
+  </Layout>
+  );
 }
+

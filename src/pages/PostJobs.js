@@ -98,10 +98,10 @@ export default function PostJobs() {
                        
                           {/*start form*/}
                           <div className="bg-amber-400 min-h-screen p-10 flex items-center justify-center rounded-lg ">
-                                <div className="container mx-auto flex items-center justify-center">
-                                  <div className="bg-white p-10 rounded-lg shadow-xl w-96">
+                                <div className="container mx-auto flex items-center justify-center  w-1/2">
+                                  <div className="bg-white p-10 rounded-lg shadow-xl w-full">
                                   <form className='grid grid-cols-1' action="/action_page.php">
-                                    <h2 className='text-center mb-5 text-2xl font-bold text-amber-400'>Post a job form</h2>
+                                    <h2 className='text-center mb-5 text-3xl font-semibold text-amber-400'>Post a job form</h2>
                                     
                                     <label className='text-amber-400 font-medium' htmlFor="usernsme ">Company Name:</label>
                                     <input className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"' type="text" name="usernsme" id="usernsme" value="Enter your company name/individual name"/>
@@ -126,18 +126,18 @@ export default function PostJobs() {
                                     <input className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"' type="text" name="usernsme" id="usernsme" value="1 Hour/ 1 Page" />
                                     
                                     <div className='flex flex-row my-3 '>
-                                    <label className='text-amber-400 font-medium mt-2' htmlFor="usernsme ">Upload a sample of the requied work: </label>
-                                    <button type="file" id="myFile" name="filename" className="ml-5 px-2 py-1 mb-2 bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white" >Upload</button>
+                                    <label className='text-amber-400 font-medium mt-2 ' htmlFor="usernsme ">Upload a sample of the requied work: </label>
+                                    <button type="file" id="myFile" name="filename" className="ml-72 px-2 py-1 mb-2 bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white" >Upload</button>
                                     </div>
                                     <div className='flex flex-row my-3 '>
                                     <label className='text-amber-400 font-medium  pr-20' htmlFor="usernsme ">Upload an image:</label>
-                                    <button type="file" id="myFile" name="filename" className=" ml-20 px-2 py-1  bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white" >Upload</button>
+                                    <button type="file" id="myFile" name="filename" className=" ml-72 px-2 py-1  bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white" >Upload</button>
                                     </div> 
                                     <label className='text-amber-400 mb-1 font-medium mt-5' htmlFor="usernsme ">Feedback:</label> 
                                     <textarea className='bg-gray-100 rounded-md mb-3  text-gray-400  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"' value=' Write your feedback here...' onChange={handleChange} />
          
                                     
-                                  <Link to="/jobs" className="bg-amber-400 mt-7 pl-28 px-3 py-2 text-lg font-medium  hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">Post Job</Link>
+                                  <Link to="/jobs" className="bg-amber-400 mt-7 pl-64 px-3 py-2 text-lg font-medium  hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">Post Job</Link>
                                   
                                   
                                   
