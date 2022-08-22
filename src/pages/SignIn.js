@@ -37,7 +37,7 @@ export default function Signin() {
           <h2 className='text-center mb-5 text-2xl font-bold text-amber-400'>SignIn Page</h2>
           
            <label className='text-amber-400 font-medium' htmlFor="usernsme ">Username</label> 
-           <input className='bg-gray-100 rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"' type="text" name="usernsme" id="usernsme" value={form.username || ''}
+           <input className='bg-gray-100 rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"' type="text" name="username" id="username" value={form.username || ''}
               onChange={onChangeHandler} />
            <label className='text-amber-400 font-medium ' htmlFor="password">Password</label> 
            <input className='bg-gray-100 rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"' type="text" name="password" id="password" value={form.password || ''}

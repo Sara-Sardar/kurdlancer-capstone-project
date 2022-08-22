@@ -33,7 +33,7 @@ export default function FreelancersProfile() {
   <p className="text-lg text-white text-justify">Kurdish: Naitive</p></div>
 </div>
           
-          
+          <div className=''>
           <h2 className="text-2xl text-white font-medium mt-2 mb-2">UX/UI Designer</h2>
           <p className="text-lg text-white text-justify">I'm a good provisional designer of mobile application and website I got taring in very academic and provisional ways I will make a design to be proud of.</p>
           
@@ -45,11 +45,11 @@ export default function FreelancersProfile() {
           
           <h2 className="text-md text-white font-medium mt-2 mb-2">Payment</h2>
           <p className="text-lg text-white text-justify">100$/ 1 hour or 100$/ 1 page</p>
-          
+          </div>
 </div>
 
 
-<div className='container mx-auto  p-12 rounded-md  bg-amber-400'><HorisontalJobsCards/></div>
+<div className='container mx-auto  p-12 rounded-md mt-10 bg-amber-400'><HorisontalJobsCards/></div>
     </SecondLayout>
   )
 }
