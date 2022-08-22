@@ -1,13 +1,16 @@
 /* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
-import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/react/outline'
-//import App.css from '../App.css'
+import { useState , Fragment ,useEffect} from 'react';
+import { Disclosure } from '@headlessui/react';
+import {  MenuIcon, XIcon } from '@heroicons/react/outline'
+import { Link, NavLink } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux'
+
 const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Freelancers', href: '/freelancers', current: false },
   { name: 'Jobs', href: '/jobs', current: false },
   { name: 'Post Jobs', href: '/postjobs', current: false },
+  
 ]
 
 
@@ -15,9 +18,16 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function NavBar() {
+{/*fixed w-full z-20 top-0 left-0*/}
+export default function ProfileNavbar() {
+  const auth = useSelector((state) => state.auth.isAuthenticated);
+  useEffect(()=>{
+    console.log('the state of auth is :',auth)
+},[])
+
   return (
-    <Disclosure as="nav" className="bg-amber-500">
+    <Disclosure as="nav" className="bg-amber-500 "> 
+    
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -34,38 +44,36 @@ export default function NavBar() {
                 </Disclosure.Button>
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-                <a className="text-md flex-shrink-0 flex items-center text-white hover:amber-500 font-medium " href='/'>
+                <Link className="text-md flex-shrink-0 flex items-center text-white hover:amber-500 font-medium " to='/'>
                  KURDLANCER
-                </a>
+                </Link>
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <NavLink
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className={classNames(
-                          item.current ? 'bg-amber-500 text-white' : 'text-gray-100 hover:bg-amber-400 hover:text-white',
+                          item.current ? 'bg-amber-400 hover:bg-amber-300 text-white' : 'text-gray-100 hover:bg-amber-400 hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
-                      </a>
+                      </NavLink>
                     ))}
                   </div>
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <button
-                  type="button"
-                  className="bg-amber-400 p-1 rounded-full text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
-                >
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button>
+                 
+                
+               
+
+
 
                 {/* Profile dropdown */}
-                <Menu as="div" className="ml-3 relative">
+                {/*<Menu as="div" className="ml-3 relative">
                   <div>
                     <Menu.Button className="bg-amber-400 flex text-sm rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
                       <span className="sr-only">Open user menu</span>
@@ -118,7 +126,7 @@ export default function NavBar() {
                       </Menu.Item>
                     </Menu.Items>
                   </Transition>
-                </Menu>
+                </Menu>*/}
               </div>
             </div>
           </div>
@@ -128,8 +136,8 @@ export default function NavBar() {
               {navigation.map((item) => (
                 <Disclosure.Button
                   key={item.name}
-                  as="a"
-                  href={item.href}
+                  as={Link}
+                  to={item.href}
                   className={classNames(
                     item.current ? 'bg-amber-500 text-white' : 'text-white hover:bg-amber-400 hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
@@ -149,49 +157,6 @@ export default function NavBar() {
 
 
 
-/*import { GlobeIcon } from '@heroicons/react/outline';
-import { Link } from 'react-router-dom';
 
-const links =[
-    {name: 'Home', url: '/'},
-    {name: 'Freelancers', url: '/freelancers'},   
-    {name: 'Jobs', url: '/jobs'},
-    {name: 'Post Jobs', url: '/postjobs'},    
-];
- 
-export default function NavBar() {
-  return (
-    <div>
-    <nav className="fixed-top text-amber-400 shadow-sm  flex justify-between items-center w-screen">
-       
-       <div className="flex "> 
-       <a href="/" className="text-2xl mx-2 p-6 font-bold hover:underline ">KURDLANCER</a>
-                
-        <ul className="flex  py-4 ">
-           {links.map((link,index)=>{
-              return(
-          <li className="text-xl mx-2 font-semibold  hover:underline rounded-md  py-2" key={index}>
-                <Link to={link.url}>{link.name}</Link>
-          </li>
-
-              );
-           })}
-        </ul>
-       </div>
-         
-        <div className="text-white mr-11">
-        <button className="p-2 ml-4 bg-amber-400 shadow-md rounded-md hover:bg-amber-500 font-semibold">SignIn</button>
-        <button className="p-2 ml-4  bg-amber-400 shadow-md rounded-md hover:bg-amber-500 font-semibold">SignUp</button>
-        <button className="p-2  ml-4 mb- bg-amber-400 shadow-md rounded-md hover:bg-amber-500 font-semibold">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-        </button>
-        </div>
-    </nav>
-    </div>
-  );
-}
-*/ 
 
 

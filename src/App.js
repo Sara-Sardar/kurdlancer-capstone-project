@@ -18,6 +18,7 @@ import CompanyProfile from './pages/CompanyProfile';
 import JobInfo from './pages/JobInfo';
 import FreelancerInfo from './pages/FreelancerInfo';
 import CreateProfile from './pages/CreateProfile';
+import Emails from './pages/Emails';
 
 
 export default function App() {
@@ -41,6 +42,7 @@ export default function App() {
             <Route path="/jobinfo" element={<JobInfo/>} />
             <Route path="/freelancerinfo" element={<FreelancerInfo/>} />
             <Route path="/createprofile" element={<CreateProfile/>} />
+            <Route path="/emails" element={<Emails/>} />
           </Routes>
 
 

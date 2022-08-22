@@ -59,18 +59,7 @@ export default function AboutUs() {
                   <p className='text-sm font-normal '>Total Jobs Posted:20,300</p>
                   <p className='text-sm font-normal '>Registered Users:56,000</p>
                 </div>
-                  
-
-                 
-                
-
-
-
-
-
-
-
-
+       
       </div>
     </div>
 </div>

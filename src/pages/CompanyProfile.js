@@ -1,7 +1,9 @@
 import React from 'react'
-
+import HorisontalJobsCards from '../components/HorisontalJobsCards'
 export default function CompanyProfile() {
   return (
-    <div>CompanyProfile</div>
+    <div>CompanyProfile
+      <HorisontalJobsCards/>
+    </div>
   )
 }

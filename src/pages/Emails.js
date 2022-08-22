@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Layout from '../layouts/MainLayout';
 export default function Emails() {
   return (
-    <div>Emails
+    <Layout>
 
 
 {/*hero section*/}
@@ -16,6 +16,6 @@ export default function Emails() {
     </div>
 </div>
 
-    </div>
+    </Layout>
   )
 }
