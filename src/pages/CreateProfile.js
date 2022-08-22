@@ -137,63 +137,77 @@ export default function CreateProfile() {
                       id="usernsme"
                       value="name@gmail.com"
                     />
-                    <label
-                      className="text-amber-400 font-medium"
-                      htmlFor="usernsme "
-                    >
-                      Gender
-                    </label>
-                    <input
-                      className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
-                      type="text"
-                      name="usernsme"
-                      id="usernsme"
-                      value="Choose Gender"
-                    />
 
-                    <div className="grid grid-cols-4 p-5 ">
+                    {/*chakikrawa done*/}
+                    <div className="grid grid-cols-4 my-2">
                       {" "}
-                      {/*chakika*/}
-                      <label
-                        className="text-amber-400  font-medium"
-                        htmlFor="usernsme "
-                      >
-                        Birthday
-                      </label>
-                      <input
-                        className='bg-gray-100 pr-5 text-gray-400 p-1  font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
-                        type="text"
-                        name="usernsme"
-                        id="usernsme"
-                        value="DD/MM/YYYY"
-                      />
-                      <label
-                        className="text-amber-400 font-medium"
-                        htmlFor="usernsme "
-                      >
-                        City
-                      </label>
-                      <input
-                        className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
-                        type="text"
-                        name="usernsme"
-                        id="usernsme"
-                        value="Erbil"
-                      />
+                      <div className="col-span-2 ">
+                        <label
+                          className="text-amber-400 font-medium"
+                          htmlFor="usernsme "
+                        >
+                          Gender
+                        </label>
+                        <input
+                          className='ml-2 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
+                          type="text"
+                          name="usernsme"
+                          id="usernsme"
+                          value="Choose Gender"
+                        />
+                      </div>
+                      <div className="col-span-2 ml-8">
+                        <label
+                          className="text-amber-400  font-medium"
+                          htmlFor="usernsme "
+                        >
+                          Birthday
+                        </label>
+                        <input
+                          className='ml-2 bg-gray-100 pr-5 text-gray-400 p-1  font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
+                          type="text"
+                          name="usernsme"
+                          id="usernsme"
+                          value="DD/MM/YYYY"
+                        />
+                      </div>
                     </div>
-                    <label
-                      className="text-amber-400 font-medium"
-                      htmlFor="usernsme "
-                    >
-                      Zip Code:
-                    </label>
-                    <input
-                      className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
-                      type="text"
-                      name="usernsme"
-                      id="usernsme"
-                      value="#####"
-                    />
+                    {/*chakikrawa done*/}
+                    {/*chakikrawa done*/}
+                    <div className="grid grid-cols-4 my-2">
+                      {" "}
+                      <div className="col-span-2 ">
+                        <label
+                          className="text-amber-400 font-medium"
+                          htmlFor="usernsme "
+                        >
+                          City
+                        </label>
+                        <input
+                          className='ml-2 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
+                          type="text"
+                          name="usernsme"
+                          id="usernsme"
+                          value="Erbil"
+                        />
+                      </div>
+                      <div className="col-span-2 ml-10">
+                        <label
+                          className="text-amber-400 font-medium"
+                          htmlFor="usernsme "
+                        >
+                          Zip Code
+                        </label>
+                        <input
+                          className='ml-2 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
+                          type="text"
+                          name="usernsme"
+                          id="usernsme"
+                          value="#####"
+                        />
+                      </div>
+                    </div>
+                    {/*chakra done*/}
                     <label
                       className="text-amber-400 font-medium "
                       htmlFor="password"

@@ -2,13 +2,17 @@ import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useEffect, useRef, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 
-export default function Dropdown() {
+export default function ProfileButton() {
   return (
     <div className=" w-56 text-right">
       <Menu as="div" className="relative inline-block text-left">
         <div>
-          <Menu.Button className="inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-            <img className="h-20 w-20" src="" alt="not loading" />
+          <Menu.Button className="rounded-full bg-black bg-opacity-20  text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+            <img
+              className="rounded-full h-12 w-12 object-fit"
+              src="https://images.unsplash.com/photo-1621140122187-3c03fe00d223?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+              alt="not loading"
+            />
           </Menu.Button>
         </div>
         <Transition
@@ -26,7 +30,7 @@ export default function Dropdown() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? "bg-blue-900 text-white" : "text-blue-900"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
@@ -48,7 +52,7 @@ export default function Dropdown() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? "bg-blue-900 text-white" : "text-blue-900"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
@@ -72,7 +76,7 @@ export default function Dropdown() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? "bg-blue-900 text-white" : "text-blue-900"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
@@ -94,7 +98,7 @@ export default function Dropdown() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? "bg-blue-900 text-white" : "text-blue-900"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
@@ -118,7 +122,7 @@ export default function Dropdown() {
                 {({ active }) => (
                   <button
                     className={`${
-                      active ? "bg-violet-500 text-white" : "text-gray-900"
+                      active ? "bg-blue-900 text-white" : "text-blue-900"
                     } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                   >
                     {active ? (
@@ -155,7 +159,7 @@ function EditInactiveIcon(props) {
       <path
         d="M4 13V16H7L16 7L13 4L4 13Z"
         fill="#EDE9FE"
-        stroke="#A78BFA"
+        stroke="#1D4A7A"
         strokeWidth="2"
       />
     </svg>
@@ -172,8 +176,8 @@ function EditActiveIcon(props) {
     >
       <path
         d="M4 13V16H7L16 7L13 4L4 13Z"
-        fill="#8B5CF6"
-        stroke="#C4B5FD"
+        fill="#1D4A7A"
+        stroke="#ffffff"
         strokeWidth="2"
       />
     </svg>
@@ -191,13 +195,13 @@ function DuplicateInactiveIcon(props) {
       <path
         d="M4 4H12V12H4V4Z"
         fill="#EDE9FE"
-        stroke="#A78BFA"
+        stroke="#1D4A7A"
         strokeWidth="2"
       />
       <path
         d="M8 8H16V16H8V8Z"
         fill="#EDE9FE"
-        stroke="#A78BFA"
+        stroke="#1D4A7A"
         strokeWidth="2"
       />
     </svg>
@@ -214,14 +218,14 @@ function DuplicateActiveIcon(props) {
     >
       <path
         d="M4 4H12V12H4V4Z"
-        fill="#8B5CF6"
-        stroke="#C4B5FD"
+        fill="#1D4A7A"
+        stroke="#ffffff"
         strokeWidth="2"
       />
       <path
         d="M8 8H16V16H8V8Z"
-        fill="#8B5CF6"
-        stroke="#C4B5FD"
+        fill="#1D4A7A"
+        stroke="#ffffff"
         strokeWidth="2"
       />
     </svg>
@@ -242,7 +246,7 @@ function ArchiveInactiveIcon(props) {
         width="10"
         height="8"
         fill="#EDE9FE"
-        stroke="#A78BFA"
+        stroke="#1D4A7A"
         strokeWidth="2"
       />
       <rect
@@ -250,11 +254,11 @@ function ArchiveInactiveIcon(props) {
         y="4"
         width="12"
         height="4"
-        fill="#EDE9FE"
-        stroke="#A78BFA"
+        fill="#none"
+        stroke="#1D4A7A"
         strokeWidth="2"
       />
-      <path d="M8 12H12" stroke="#A78BFA" strokeWidth="2" />
+      <path d="M8 12H12" stroke="#1D4A7A" strokeWidth="2" />
     </svg>
   );
 }
@@ -272,8 +276,8 @@ function ArchiveActiveIcon(props) {
         y="8"
         width="10"
         height="8"
-        fill="#8B5CF6"
-        stroke="#C4B5FD"
+        fill="#none"
+        stroke="#ffffff"
         strokeWidth="2"
       />
       <rect
@@ -281,11 +285,11 @@ function ArchiveActiveIcon(props) {
         y="4"
         width="12"
         height="4"
-        fill="#8B5CF6"
-        stroke="#C4B5FD"
+        fill="#ffffff"
+        stroke="#ffffff"
         strokeWidth="2"
       />
-      <path d="M8 12H12" stroke="#A78BFA" strokeWidth="2" />
+      <path d="M8 12H12" stroke="#ffffff" strokeWidth="2" />
     </svg>
   );
 }
@@ -298,9 +302,9 @@ function MoveInactiveIcon(props) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M10 4H16V10" stroke="#A78BFA" strokeWidth="2" />
-      <path d="M16 4L8 12" stroke="#A78BFA" strokeWidth="2" />
-      <path d="M8 6H4V16H14V12" stroke="#A78BFA" strokeWidth="2" />
+      <path d="M10 4H16V10" stroke="#1D4A7A" strokeWidth="2" />
+      <path d="M16 4L8 12" stroke="#1D4A7A" strokeWidth="2" />
+      <path d="M8 6H4V16H14V12" stroke="#1D4A7A" strokeWidth="2" />
     </svg>
   );
 }
@@ -313,9 +317,9 @@ function MoveActiveIcon(props) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <path d="M10 4H16V10" stroke="#C4B5FD" strokeWidth="2" />
-      <path d="M16 4L8 12" stroke="#C4B5FD" strokeWidth="2" />
-      <path d="M8 6H4V16H14V12" stroke="#C4B5FD" strokeWidth="2" />
+      <path d="M10 4H16V10" stroke="#ffffff" strokeWidth="2" />
+      <path d="M16 4L8 12" stroke="#ffffff" strokeWidth="2" />
+      <path d="M8 6H4V16H14V12" stroke="#ffffff" strokeWidth="2" />
     </svg>
   );
 }
@@ -333,12 +337,12 @@ function DeleteInactiveIcon(props) {
         y="6"
         width="10"
         height="10"
-        fill="#EDE9FE"
-        stroke="#A78BFA"
+        fill="none"
+        stroke="#1D4A7A"
         strokeWidth="2"
       />
-      <path d="M3 6H17" stroke="#A78BFA" strokeWidth="2" />
-      <path d="M8 6V4H12V6" stroke="#A78BFA" strokeWidth="2" />
+      <path d="M3 6H17" stroke="#1D4A7A" strokeWidth="2" />
+      <path d="M8 6V4H12V6" stroke="#1D4A7A" strokeWidth="2" />
     </svg>
   );
 }
@@ -356,12 +360,12 @@ function DeleteActiveIcon(props) {
         y="6"
         width="10"
         height="10"
-        fill="#8B5CF6"
-        stroke="#C4B5FD"
+        fill="#none"
+        stroke="#ffffff"
         strokeWidth="2"
       />
-      <path d="M3 6H17" stroke="#C4B5FD" strokeWidth="2" />
-      <path d="M8 6V4H12V6" stroke="#C4B5FD" strokeWidth="2" />
+      <path d="M3 6H17" stroke="#ffffff" strokeWidth="2" />
+      <path d="M8 6V4H12V6" stroke="#ffffff" strokeWidth="2" />
     </svg>
   );
 }
