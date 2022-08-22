@@ -21,7 +21,7 @@ export default function Companyprofile() {
 
 
 
-        <div className='container mx-auto bg-amber-400 p-12 rounded-md mt-10 '>
+        <div className='container mx-auto bg-amber-400 p-12 rounded-md  '>
           
 
         <div className='grid grid-cols-2 mb-20'>
