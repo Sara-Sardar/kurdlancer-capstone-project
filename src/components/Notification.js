@@ -1,17 +1,16 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Fragment, useEffect, useRef, useState } from "react";
-import { ChevronDownIcon } from "@heroicons/react/solid";
+import { BellIcon } from "@heroicons/react/solid";
 
-export default function ProfileButton() {
+export default function Notification() {
   return (
-    <div className=" w-14 text-right">
-      <Menu as="div" className="relative inline-block text-left">
+    <div className="w-14 text-right">
+      <Menu as="div" className=" w-auto">
         <div>
-          <Menu.Button className="rounded-full bg-black bg-opacity-20 mt-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-            <img
-              className="rounded-full h-12 w-12 object-fit "
-              src="https://images.unsplash.com/photo-1621140122187-3c03fe00d223?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-              alt="not loading"
+          <Menu.Button className="rounded-full bg-amber-500 bg-opacity-20 p-3 hover:bg-amber-400 text-sm font-medium text-white  focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+            <BellIcon
+              className="rounded-full w-6 h-6  text-white hover:text-white"
+              aria-hidden="true"
             />
           </Menu.Button>
         </div>

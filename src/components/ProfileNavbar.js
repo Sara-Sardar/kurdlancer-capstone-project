@@ -5,7 +5,8 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link, NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import ProfileButton from "./ProfileButton";
-
+import Notification from "./Notification";
+import EmailsButton from "./EmailsButton";
 const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "Freelancers", href: "/freelancers", current: false },
@@ -70,9 +71,16 @@ export default function ProfileNavbar() {
                   </div>
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                {/*notification + profile */}
-                <ProfileButton />
+              <div className=" flex justify-center items-center  pr-0 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <EmailsButton />
+                {/*notification*/}
+                <div>
+                  <Notification />
+                </div>
+                {/*profile */}
+                <div>
+                  <ProfileButton />
+                </div>
               </div>
             </div>
           </div>
