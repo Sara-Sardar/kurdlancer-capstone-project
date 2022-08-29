@@ -65,6 +65,14 @@ export default function Home() {
           <div>
             {/*Dropdown skill */}
             <DropdwonSkill />
+            <div className="my-12 ml-72">
+              <Link
+                to="/addskills"
+                className="shadow-md hover:shadow-lg  bg-blue-900 hover:bg-blue-800 text-white px-6 py-4 rounded-lg text-xl font-semibold mr-4"
+              >
+                View Add Skills
+              </Link>
+            </div>
           </div>
 
           <div

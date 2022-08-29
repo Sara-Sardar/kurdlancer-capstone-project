@@ -5,19 +5,19 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Tabs() {
+export default function Example() {
   let [categories] = useState({
-    Recent: [
+    Design: [
       {
         id: 1,
-        title: "Does drinking coffee make you smarter?",
+        title: "UX/UI Designer",
         date: "5h ago",
         commentCount: 5,
         shareCount: 2,
       },
       {
         id: 2,
-        title: "So you've bought coffee... now what?",
+        title: "Graphic Designer",
         date: "2h ago",
         commentCount: 3,
         shareCount: 2,
@@ -58,19 +58,19 @@ export default function Tabs() {
   });
 
   return (
-    <div className="w-full max-w-md px-2 py-16 sm:px-0">
+    <div className="w-full max-w-md px-2  sm:px-0">
       <Tab.Group>
-        <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
+        <Tab.List className="flex space-x-1 rounded-xl bg-blue-900 p-1">
           {Object.keys(categories).map((category) => (
             <Tab
               key={category}
               className={({ selected }) =>
                 classNames(
-                  "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-blue-700",
-                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2",
+                  "w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-amber-500",
+                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-amber-400 focus:outline-none focus:ring-2",
                   selected
                     ? "bg-white shadow"
-                    : "text-blue-100 hover:bg-white/[0.12] hover:text-white"
+                    : "text-white hover:bg-amber-400 hover:text-white"
                 )
               }
             >
