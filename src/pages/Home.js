@@ -393,28 +393,133 @@ export default function Home() {
       </div>
 
       {/*Hearfrom clients*/}
-      <div className="container mx-auto rounded-md bg-amber-400 pb-2">
-        <div className="mt-11 pt-8 pl-8 pb-4">
+      <div className="container mx-auto rounded-md  pb-2 ">
+        <div className="mt-11 pt-8 pl-8 pb-4 ">
           {" "}
-          <div className=" flex flex-col  justify-center">
-            <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl ">
+          <div>
+            <h2 className="text-4xl tracking-tight font-extrabold text-amber-400 sm:text-3xl md:text-3xl ">
               Hear from some of our
-              <span className="text-blue-900 "> clients.</span>
+              <span className="text-blue-900  "> clients.</span>
             </h2>
           </div>
-          <div className="flex flex-row justify-around">
-            <div className="text-2xl text-blue-900 mt-3  font-medium w-auto h-64 py-4 px-8 bg-orange-900">
-              1
+          {/*1*/}
+          <div className="flex flex-cols justify-around mt-5">
+            <div className="text-md text-amber-400 m-5 p-10 font-medium w-auto h-98 py-4 px-8 outline-dashed outline-4 outline-offset-2 outline-amber-400 hover:outline-blue-900 rounded-lg">
+              <div className="py-3 ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                  />
+                </svg>
+              </div>
+              <div className="mb-3">
+                Working with Kurdlancer has been a great expereience for
+                us.their crew was quite helpful in assisting us in our search
+                for the ideal talent (Freelancer) for our project.We couldn't
+                have been happier with the overall experience since the work was
+                good , The communication was excellent , we were very sutisfied
+                with overall experience. We're gladly looking forward to working
+                with Kurdlancer on future projects.
+                <div className="flex items-center  my-4  w-64 p-2  rounded-md">
+                  <div>
+                    <img
+                      src="https://images.unsplash.com/photo-1587732279092-23ff8f3573b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80"
+                      alt="img"
+                      className="h-16 w-16 rounded-full object-fill"
+                    />
+                  </div>
+                  <div className="ml-5">Tara Osman</div>
+                </div>
+              </div>
             </div>
-            <div className="text-2xl text-blue-900 mt-3  font-medium  bg-orange-900">
-              2
+            {/*2*/}
+            <div className="text-md text-amber-400 m-5 p-10 font-medium w-auto h-98 py-4 px-8 outline-dashed outline-4 outline-offset-2 outline-amber-400 hover:outline-blue-900 rounded-lg">
+              <div className="py-3 ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                  />
+                </svg>
+              </div>
+              <div className="mb-3">
+                Working with Kurdlancer has been a great expereience for
+                us.their crew was quite helpful in assisting us in our search
+                for the ideal talent (Freelancer) for our project.We couldn't
+                have been happier with the overall experience since the work was
+                good , The communication was excellent , we were very sutisfied
+                with overall experience. We're gladly looking forward to working
+                with Kurdlancer on future projects.
+                <div className="flex items-center  my-4 w-64 p-2 rounded-md">
+                  <div>
+                    <img
+                      src="https://images.unsplash.com/photo-1587732279092-23ff8f3573b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80"
+                      alt="img"
+                      className="h-16 w-16 rounded-full object-fill"
+                    />
+                  </div>
+                  <div className="ml-5">Tara Osman</div>
+                </div>
+              </div>
             </div>
-            <div className="text-2xl text-blue-900 mt-3  font-medium bg-orange-900 ">
-              3
-            </div>
+            {/*3*/}
+            <div className="text-md text-amber-400 m-5 p-10 font-medium w-auto h-98 py-4 px-8 outline-dashed outline-4 outline-offset-2 outline-amber-400 hover:outline-blue-900 rounded-lg">
+              <div className="py-3 ">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                  />
+                </svg>
+              </div>
+              <div className="mb-3">
+                Working with Kurdlancer has been a great expereience for
+                us.their crew was quite helpful in assisting us in our search
+                for the ideal talent (Freelancer) for our project.We couldn't
+                have been happier with the overall experience since the work was
+                good , The communication was excellent , we were very sutisfied
+                with overall experience. We're gladly looking forward to working
+                with Kurdlancer on future projects.
+                <div className="flex items-center  my-4 w-64 p-2 rounded-md">
+                  <div>
+                    <img
+                      src="https://images.unsplash.com/photo-1587732279092-23ff8f3573b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80"
+                      alt="img"
+                      className="h-16 w-16 rounded-full object-fill"
+                    />
+                  </div>
+                  <div className="ml-5">Tara Osman</div>
+                </div>
+              </div>
+            </div>{" "}
+            {/*end3*/}
           </div>
         </div>
-        <div className="bg-orange-900">hhh</div>
       </div>
     </Layout>
   );
