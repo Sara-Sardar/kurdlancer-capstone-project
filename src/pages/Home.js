@@ -8,6 +8,8 @@ import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
 import DropdwonSkill from "../components/DropdwonSkill";
 
+//import ContactList from "../components/ContactList";
+
 export default function Home() {
   return (
     <Layout>
@@ -261,6 +263,158 @@ export default function Home() {
             </Carousel>
           </div>
         </div>
+      </div>
+
+      {/* Top specialest section*/}
+      <div className="container mx-auto rounded-md bg-amber-400/5 pb-2">
+        <div className="mt-11 pt-8 pl-8 pb-4">
+          {" "}
+          <div className=" flex flex-col  justify-center ">
+            <h2 className="text-4xl tracking-tight font-extrabold text-amber-400 sm:text-3xl md:text-3xl ">
+              Top Specialest
+              <span className="text-blue-900 "> Freelancers.</span>
+            </h2>
+          </div>
+        </div>
+        {/*card1*/}
+        <div className="flex flex-cols justify-start items-center ml-36 mt-5">
+          <img
+            className="w-48  h-1/2 p-2 rounded-2xl  "
+            src="https://images.unsplash.com/photo-1527565290982-018bcfdbee74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+            alt=""
+          />
+
+          <div className="w-auto h-64 py-4 px-8 bg-amber-500/50 rounded-lg text-white font-semibold text-lg flex flex-col items-center justify-center ">
+            <h5 className="mb-2 pt-2 text-xl font-semibold  text-white">
+              Name: Dalia Jamal
+            </h5>
+            <p className="mb-3">Speciality: JavaScript</p>
+
+            <p className="mb-3 font-normal text-white dark:text-gray-400">
+              Location:Halabja
+            </p>
+
+            <div className="pl-2 mt-4 flex flex-col justify-center items-center">
+              <p className="inline-flex items-center py-2 px-3 bg-amber-400  text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
+                View
+                <svg
+                  aria-hidden="true"
+                  className="ml-2 -mr-1 w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/*card2*/}
+        <div className="flex flex-cols justify-center items-center ">
+          <img
+            className="w-48  h-1/2 p-2 rounded-2xl  "
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60"
+            alt=""
+          />
+
+          <div className="w-auto h-64 py-4 px-8 bg-amber-500/50 rounded-lg text-white font-semibold text-lg flex flex-col items-center justify-center ">
+            <h5 className="mb-2 pt-2 text-xl font-semibold  text-white">
+              Name: Shang Bakhtyar
+            </h5>
+            <p className="mb-3">Speciality: Full Stack</p>
+            <p className="mb-3 font-normal text-white dark:text-gray-400">
+              Location: Erbil
+            </p>
+
+            <div className="pl-2 mt-4 flex flex-col justify-center items-center">
+              <p className="inline-flex items-center py-2 px-3 bg-amber-400  text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
+                View
+                <svg
+                  aria-hidden="true"
+                  className="ml-2 -mr-1 w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/*card3*/}
+        <div className=" flex flex-cols justify-end items-center mr-32">
+          <img
+            className="w-48  h-1/2 p-2 rounded-2xl  "
+            src="https://images.unsplash.com/photo-1587732279092-23ff8f3573b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80"
+            alt=""
+          />
+
+          <div className="w-auto h-64 py-4 px-8 bg-amber-500/50 rounded-lg text-white font-semibold text-lg flex flex-col items-center justify-center ">
+            <h5 className="mb-2 pt-2 text-xl font-semibold  text-white">
+              Name: Shene Bahzad
+            </h5>
+            <p className="mb-3">Speciality: Graphic Designer</p>
+            <p className="mb-3 font-normal text-white dark:text-gray-400">
+              Location: Dhok
+            </p>
+
+            <div className="pl-2 mt-4 flex flex-col justify-center items-center">
+              <p className="inline-flex items-center py-2 px-3 bg-amber-400  text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
+                View
+                <svg
+                  aria-hidden="true"
+                  className="ml-2 -mr-1 w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  ></path>
+                </svg>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*Hearfrom clients*/}
+      <div className="container mx-auto rounded-md bg-amber-400 pb-2">
+        <div className="mt-11 pt-8 pl-8 pb-4">
+          {" "}
+          <div className=" flex flex-col  justify-center">
+            <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl ">
+              Hear from some of our
+              <span className="text-blue-900 "> clients.</span>
+            </h2>
+          </div>
+          <div className="flex flex-row justify-around">
+            <div className="text-2xl text-blue-900 mt-3  font-medium w-auto h-64 py-4 px-8 bg-orange-900">
+              1
+            </div>
+            <div className="text-2xl text-blue-900 mt-3  font-medium  bg-orange-900">
+              2
+            </div>
+            <div className="text-2xl text-blue-900 mt-3  font-medium bg-orange-900 ">
+              3
+            </div>
+          </div>
+        </div>
+        <div className="bg-orange-900">hhh</div>
       </div>
     </Layout>
   );

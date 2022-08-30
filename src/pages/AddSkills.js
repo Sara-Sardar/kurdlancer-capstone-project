@@ -7,17 +7,27 @@ import { Carousel } from "react-responsive-carousel";
 export default function AddSkills() {
   return (
     <Layout>
+      <div className="container  rounded-md   mx-auto flex justify-center mt-8 md:mt-0 ">
+        <div className="  ">
+          {" "}
+          <div className=" flex items-center justify-center">
+            <Tabs />
+          </div>
+        </div>
+      </div>
+
       {/*Hero section*/}
       <div className="container rounded-md  bg-amber-400 mx-auto grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-10 ">
-        <div className=" mt-11 p-8">
+        <div className=" my-5 p-8">
           {" "}
           <div className=" flex flex-col items-center justify-center">
             <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-5xl ">
-              Find Freelancer By Thieir Skills,
-              <span className="text-blue-900">
+              Find Freelancer By Their Skills,
+              <span className="text-white">
                 {" "}
-                Search and add any skills to find your desired freelancers
+                Search and add any skills to find your
               </span>
+              <span className="text-blue-900"> desired freelancers.</span>
             </h2>
           </div>
         </div>
@@ -27,15 +37,8 @@ export default function AddSkills() {
       <div className="container mx-auto rounded-md bg-amber-400 pb-2">
         <div className="mt-11 pt-8 pl-8 pb-4">
           {" "}
-          <div className=" flex flex-col  justify-center">
-            <h2 className="text-4xl mb-10 tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl ">
-              Skills
-              <span className="text-blue-900"> Categories:</span>
-            </h2>
-            <Tabs />
-          </div>
           {/* Add skils section*/}
-          <div className="container mx-auto rounded-md  bg-amber-400  ">
+          <div className="container mx-auto rounded-md   ">
             <div className="mt-11 pt-8 pl-8 ">
               {" "}
               <div className="flex flex-col  justify-center">

@@ -7,6 +7,8 @@ import { useSelector, useDispatch } from "react-redux";
 import ProfileButton from "./ProfileButton";
 import Notification from "./Notification";
 import EmailsButton from "./EmailsButton";
+import DarkMode from "./DarkMode";
+import Languages from "./Languages";
 const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "Freelancers", href: "/freelancers", current: false },
@@ -72,11 +74,16 @@ export default function ProfileNavbar() {
                 </div>
               </div>
               <div className=" flex justify-center items-center  pr-0 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                {/* dark mode */}
+                <DarkMode />
+                {/*Email */}
                 <EmailsButton />
                 {/*notification*/}
                 <div>
                   <Notification />
                 </div>
+                {/*languages*/}
+                <Languages />
                 {/*profile */}
                 <div>
                   <ProfileButton />
