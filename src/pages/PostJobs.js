@@ -79,7 +79,7 @@ export default function PostJobs() {
       </div>
 
       {/*body*/}
-      <div className="container mx-auto h-full rounded-md  bg-amber-400 mt-10">
+      <div className="container mx-auto min-h-screen rounded-md  bg-amber-400 mt-10">
         <div className=" text-white ">
           <div className="p-10 m-10">
             <p className=" text-4xl font-medium py-4">
@@ -88,9 +88,9 @@ export default function PostJobs() {
             <p className="text-xl mb-10">Fill the below form :</p>
 
             {/*start form*/}
-            <div className="bg-amber-400 min-h-screen p-10 flex items-center justify-center rounded-lg ">
-              <div className="container mx-auto flex items-center justify-center  w-1/2">
-                <div className="bg-white p-10 rounded-lg shadow-xl w-full">
+            <div className=" min-h-screen p-10 flex items-center justify-center rounded-lg mt-10">
+              <div className="container mx-auto flex items-center justify-center">
+                <div className="bg-white p-10 rounded-lg shadow-xl w-96 lg:w-1/2">
                   <form className="grid grid-cols-1" action="/action_page.php">
                     <h2 className="text-center mb-5 text-3xl font-semibold text-amber-400">
                       Post a job form
@@ -149,33 +149,33 @@ export default function PostJobs() {
                       value="UX/UI Designer"
                     />
 
-                    {/*chakikrawa done*/}
+                    {/*chakibka */}
                     <div className="grid grid-cols-4 my-2">
                       {" "}
-                      <div className="col-span-2 ">
+                      <div className="col-span-2 bg-orange-900 ">
                         <label
                           className="text-amber-400 font-medium"
                           htmlFor="usernsme "
                         >
-                          City
+                          City:
                         </label>
                         <input
-                          className='ml-2 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
+                          className=' bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
                           type="text"
                           name="usernsme"
                           id="usernsme"
                           value="Erbil"
                         />
                       </div>
-                      <div className="col-span-2 ml-10">
+                      <div className="col-span-2 lg:ml-10 bg-lime-900">
                         <label
                           className="text-amber-400 font-medium"
                           htmlFor="usernsme "
                         >
-                          Zip Code
+                          Zip Code:
                         </label>
                         <input
-                          className='ml-2 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
+                          className=' bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
                           type="text"
                           name="usernsme"
                           id="usernsme"
@@ -235,7 +235,7 @@ export default function PostJobs() {
                         type="file"
                         id="myFile"
                         name="filename"
-                        className="ml-72 px-2 py-1 mb-2 bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
+                        className="ml-24 lg:ml-72 px-2 py-1 mb-2 bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                       >
                         Upload
                       </button>
@@ -251,7 +251,7 @@ export default function PostJobs() {
                         type="file"
                         id="myFile"
                         name="filename"
-                        className=" ml-72 px-2 py-1  bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
+                        className=" ml-24 lg:ml-72  px-2 py-1  bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                       >
                         Upload
                       </button>
@@ -260,17 +260,17 @@ export default function PostJobs() {
                       className="text-amber-400 mb-1 font-medium mt-5"
                       htmlFor="usernsme "
                     >
-                      Feedback:
+                      Job Description:
                     </label>
                     <textarea
                       className='bg-gray-100 rounded-md mb-3  text-gray-400  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
-                      value=" Write your feedback here..."
+                      value=" Write your Description here..."
                       onChange={handleChange}
                     />
 
                     <Link
                       to="/jobs"
-                      className="bg-amber-400 mt-7 pl-64 px-3 py-2 text-lg font-medium  hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
+                      className="bg-amber-400 mt-7 pl-12 lg:pl-32 px-3 py-2 text-lg font-medium  hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                     >
                       Post Job
                     </Link>

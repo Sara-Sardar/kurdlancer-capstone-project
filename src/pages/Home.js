@@ -30,7 +30,7 @@ export default function Home() {
             Hire a pro for any skills.
           </p>
         </div>
-        <div className="">
+        <div>
           <FreelancerCarasoul />
         </div>
       </div>
@@ -46,7 +46,7 @@ export default function Home() {
             </h2>
           </div>
         </div>
-        <div className="grid grid-cols-3 md:grid-cols-1 mt-4 md:mt-4 sm:grid-cols-1 ">
+        <div>
           <JobsCarasoul />
         </div>
       </div>
@@ -63,14 +63,14 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" grid grid-cols-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 ">
           <div>
             {/*Dropdown skill */}
             <DropdwonSkill />
-            <div className="my-12 ml-72">
+            <div className="my-12 ml-36 lg:ml-72">
               <Link
                 to="/addskills"
-                className="shadow-md hover:shadow-lg  bg-blue-900 hover:bg-blue-800 text-white px-6 py-4 rounded-lg text-xl font-semibold mr-4"
+                className="shadow-md hover:shadow-lg  bg-blue-900 hover:bg-blue-800 text-white px-6 py-4 rounded-lg text-xl font-semibold  lg:mr-4"
               >
                 View Add Skills
               </Link>
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
 
           <div
-            className="pl-28
+            className="pl-20 lg:pl-28
           "
           >
             <Carousel
@@ -91,7 +91,7 @@ export default function Home() {
               showThumbs={false}
             >
               {/*start carasoul1*/}
-              <div className=" grid grid-cols-1  pl-96 pb-10 ml-96 mt-5 ">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  lg:pl-96 pb-10 lg:ml-96 mt-5 ">
                 {/*card1*/}
 
                 <Link
@@ -135,7 +135,7 @@ export default function Home() {
               </div>
 
               {/*card2*/}
-              <div className=" grid grid-cols-1 gap-y-80 w-96 gap-x-80 pl-96 pb-10 ml-96 mt-5">
+              <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-80 w-96  pl-96 pb-10 ml-96 mt-5">
                 <Link
                   to="./freelancers"
                   className="h-min w-96  bg-white pb-4  rounded-lg  border-gray-200 shadow-md "
@@ -176,7 +176,7 @@ export default function Home() {
                 </Link>
               </div>
               {/*card3*/}
-              <div className=" grid grid-cols-1 gap-y-80 gap-x-80 pl-96 pb-10 ml-96 mt-5">
+              <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-80 pl-96 pb-10 ml-96 mt-5">
                 <Link
                   to="./freelancers"
                   className="h-min w-96  bg-white pb-4  rounded-lg  border-gray-200 shadow-md 0"
@@ -218,7 +218,7 @@ export default function Home() {
               </div>
 
               {/*card4*/}
-              <div className=" grid grid-cols-1 gap-y-80 gap-x-80 pl-96 pb-10 ml-96 mt-5">
+              <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-80  pl-96 pb-10 ml-96 mt-5">
                 <Link
                   to="./freelancers"
                   className="h-min w-96  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
@@ -277,7 +277,7 @@ export default function Home() {
           </div>
         </div>
         {/*card1*/}
-        <div className="flex flex-cols justify-start items-center ml-36 mt-5">
+        <div className="flex flex-cols justify-start items-center lg:ml-36 mt-5">
           <img
             className="w-48  h-1/2 p-2 rounded-2xl  "
             src="https://images.unsplash.com/photo-1527565290982-018bcfdbee74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
@@ -354,7 +354,7 @@ export default function Home() {
         </div>
 
         {/*card3*/}
-        <div className=" flex flex-cols justify-end items-center mr-32">
+        <div className=" flex flex-cols justify-end items-center lg:mr-32">
           <img
             className="w-48  h-1/2 p-2 rounded-2xl  "
             src="https://images.unsplash.com/photo-1587732279092-23ff8f3573b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80"
@@ -393,7 +393,7 @@ export default function Home() {
       </div>
 
       {/*Hearfrom clients*/}
-      <div className="container mx-auto rounded-md  pb-2 ">
+      <div className="container mx-auto  rounded-md  pb-2 ">
         <div className="mt-11 pt-8 pl-8 pb-4 ">
           {" "}
           <div>
@@ -403,7 +403,7 @@ export default function Home() {
             </h2>
           </div>
           {/*1*/}
-          <div className="flex flex-cols justify-around mt-5">
+          <div className=" mt-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
             <div className="text-md text-amber-400 m-5 p-10 font-medium w-auto h-98 py-4 px-8 outline-dashed outline-4 outline-offset-2 outline-amber-400 hover:outline-blue-900 rounded-lg">
               <div className="py-3 ">
                 <svg
@@ -432,9 +432,9 @@ export default function Home() {
                 <div className="flex items-center  my-4  w-64 p-2  rounded-md">
                   <div>
                     <img
-                      src="https://images.unsplash.com/photo-1587732279092-23ff8f3573b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80"
+                      src="https://images.unsplash.com/photo-1527565290982-018bcfdbee74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
                       alt="img"
-                      className="h-16 w-16 rounded-full object-fill"
+                      className="h-20 w-20 rounded-full object-fill"
                     />
                   </div>
                   <div className="ml-5">Tara Osman</div>
@@ -470,12 +470,12 @@ export default function Home() {
                 <div className="flex items-center  my-4 w-64 p-2 rounded-md">
                   <div>
                     <img
-                      src="https://images.unsplash.com/photo-1587732279092-23ff8f3573b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80"
+                      src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60"
                       alt="img"
-                      className="h-16 w-16 rounded-full object-fill"
+                      className="h-20 w-20 rounded-full object-fill"
                     />
                   </div>
-                  <div className="ml-5">Tara Osman</div>
+                  <div className="ml-5">rezan dler</div>
                 </div>
               </div>
             </div>
@@ -510,10 +510,10 @@ export default function Home() {
                     <img
                       src="https://images.unsplash.com/photo-1587732279092-23ff8f3573b0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=830&q=80"
                       alt="img"
-                      className="h-16 w-16 rounded-full object-fill"
+                      className="h-20 w-20 rounded-full object-fill"
                     />
                   </div>
-                  <div className="ml-5">Tara Osman</div>
+                  <div className="ml-5">Tavga Rahim</div>
                 </div>
               </div>
             </div>{" "}
