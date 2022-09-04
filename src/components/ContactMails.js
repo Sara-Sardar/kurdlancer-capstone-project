@@ -4,18 +4,18 @@ import { ellipsis, vertical } from "@heroicons/react/solid";
 export default function ContactMails() {
   return (
     <div>
-      <div className="container mx-auto w-fit  flex justify-center items-center bg-amber-500/30 rounded-md m-10 ">
+      <div className="container mx-auto w-fit  flex justify-center items-center bg-amber-500/50 rounded-md m-10 ">
         <div className="  m-10 ">
           {/*1*/}
           <div className="flex items-center  mb-4 shadow-md w-64 p-2 bg-white rounded-md">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1527565290982-018bcfdbee74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="https://source.unsplash.com/ZHvM3XIOHoE/400x400"
                 alt="img"
                 className="h-16 w-16 rounded-full"
               />
             </div>
-            <div className="ml-5">Sara sardar</div>
+            <div className="ml-5">Ali sardar</div>
             <div className="ml-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -37,12 +37,12 @@ export default function ContactMails() {
           <div className="flex items-center  mb-4 shadow-md w-64 p-2 bg-white rounded-md">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1527565290982-018bcfdbee74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="https://source.unsplash.com/mjRwhvqEC0U/400x400"
                 alt="img"
                 className="h-16 w-16 rounded-full"
               />
             </div>
-            <div className="ml-5">Sara sardar</div>
+            <div className="ml-5">ara salam</div>
             <div className="ml-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,12 +64,12 @@ export default function ContactMails() {
           <div className="flex items-center  mb-4 shadow-md w-64 p-2 bg-white rounded-md">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1527565290982-018bcfdbee74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="https://source.unsplash.com/rDEOVtE7vOs/400x400"
                 alt="img"
                 className="h-16 w-16 rounded-full"
               />
             </div>
-            <div className="ml-5">Sara sardar</div>
+            <div className="ml-5">Tara Ali</div>
             <div className="ml-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -91,12 +91,12 @@ export default function ContactMails() {
           <div className="flex items-center  mb-4 shadow-md w-64 p-2 bg-white rounded-md">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1527565290982-018bcfdbee74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="https://source.unsplash.com/mEZ3PoFGs_k/400x400"
                 alt="img"
                 className="h-16 w-16 rounded-full"
               />
             </div>
-            <div className="ml-5">Sara sardar</div>
+            <div className="ml-5">Shara Raza</div>
             <div className="ml-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -118,12 +118,12 @@ export default function ContactMails() {
           <div className="flex items-center  mb-4 shadow-md w-64 p-2 bg-white rounded-md">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1527565290982-018bcfdbee74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="https://source.unsplash.com/JN0SUcTOig0/400x400"
                 alt="img"
                 className="h-16 w-16 rounded-full"
               />
             </div>
-            <div className="ml-5">Sara sardar</div>
+            <div className="ml-5">Rasha Sarwa</div>
             <div className="ml-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -145,12 +145,12 @@ export default function ContactMails() {
           <div className="flex items-center  mb-4 shadow-md w-64 p-2 bg-white rounded-md">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1527565290982-018bcfdbee74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="https://source.unsplash.com/hh3ViD0r0Rc/400x400"
                 alt="img"
                 className="h-16 w-16 rounded-full"
               />
             </div>
-            <div className="ml-5">Sara sardar</div>
+            <div className="ml-5">Hardi Salah</div>
             <div className="ml-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -178,7 +178,7 @@ export default function ContactMails() {
                 className="h-16 w-16 rounded-full"
               />
             </div>
-            <div className="ml-5">Sara sardar</div>
+            <div className="ml-5">Nali Brwa</div>
             <div className="ml-10">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -205,7 +205,7 @@ export default function ContactMails() {
           <div className="flex items-center  mb-4 shadow-md w-full p-2 bg-white rounded-md">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1527565290982-018bcfdbee74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="https://source.unsplash.com/JN0SUcTOig0/400x400"
                 alt="img"
                 className="h-16 w-16 rounded-full"
               />
@@ -224,9 +224,9 @@ export default function ContactMails() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60"
+                src="https://source.unsplash.com/ZHvM3XIOHoE/400x400"
                 alt="img"
-                className="h-16 w-16 rounded-full"
+                className="h-16 w-16 rounded-full "
               />
             </div>
           </div>
@@ -235,7 +235,7 @@ export default function ContactMails() {
           <div className="flex items-center  mb-4 shadow-md w-full p-2 bg-white rounded-md">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1527565290982-018bcfdbee74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="https://source.unsplash.com/JN0SUcTOig0/400x400"
                 alt="img"
                 className="h-16 w-16 rounded-full"
               />
@@ -253,9 +253,9 @@ export default function ContactMails() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60"
+                src="https://source.unsplash.com/ZHvM3XIOHoE/400x400"
                 alt="img"
-                className="h-16 w-16 rounded-full"
+                className="h-16 w-16 rounded-full ml-8"
               />
             </div>
           </div>
@@ -264,7 +264,7 @@ export default function ContactMails() {
           <div className="flex items-center  mb-4 shadow-md w-full p-2 bg-white rounded-md">
             <div>
               <img
-                src="https://images.unsplash.com/photo-1527565290982-018bcfdbee74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                src="https://source.unsplash.com/JN0SUcTOig0/400x400"
                 alt="img"
                 className="h-16 w-16 rounded-full"
               />
@@ -282,14 +282,14 @@ export default function ContactMails() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE2fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1000&q=60"
+                src="https://source.unsplash.com/ZHvM3XIOHoE/400x400"
                 alt="img"
-                className="h-16 w-16 rounded-full"
+                className="h-16 w-16 rounded-full ml-4"
               />
             </div>
           </div>
           {/*chat input*/}
-          {/*2*/}
+          {/**/}
           <div className="flex items-center  mb-4 shadow-md w-full p-2 bg-white rounded-md">
             <div className="mr-2">
               <form className="container " action="/action_page.php">

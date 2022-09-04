@@ -10,7 +10,7 @@ export default function HorisontalJobsCards() {
       {/*card 1*/}
       <Link
         to={"/jobs"}
-        className="container mt-5 mx-auto grid grid-cols-2 divide-x-2 rounded-md  bg-blue-900 py-5"
+        className="container mt-5 mx-auto grid grid-cols-2 divide-x-2 rounded-md  bg-blue-900 py-5 shadow-md hover:shadow-2xl transition-shadow"
       >
         <div className="px-10">
           <h2 className="text-md text-white font-medium mt-2 mb-2">
@@ -63,7 +63,7 @@ export default function HorisontalJobsCards() {
       {/*card 2*/}
       <Link
         to={"/jobs"}
-        className="container mt-5 mx-auto grid grid-cols-2 divide-x-2 rounded-md  bg-blue-900 py-5"
+        className="container mt-5 mx-auto grid grid-cols-2 divide-x-2 rounded-md  bg-blue-900 py-5 shadow-md hover:shadow-2xl transition-shadow"
       >
         <div className="px-10">
           <h2 className="text-md text-white font-medium mt-2 mb-2">
@@ -118,7 +118,7 @@ export default function HorisontalJobsCards() {
       {/*card 3*/}
       <Link
         to={"/jobs"}
-        className="container mt-5 mx-auto grid grid-cols-2 divide-x-2 rounded-md  bg-blue-900 py-5 mb-20  "
+        className="container mt-5 mx-auto grid grid-cols-2 divide-x-2 rounded-md  bg-blue-900 py-5 mb-20 shadow-md hover:shadow-2xl transition-shadow "
       >
         <div className="px-10">
           <h2 className="text-md text-white font-medium mt-2 mb-2">

@@ -58,7 +58,7 @@ export default function Jobs() {
 
               <Link
                 to="/jobinfo"
-                className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md "
+                className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -101,7 +101,7 @@ export default function Jobs() {
 
               <Link
                 to="/jobinfo"
-                className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md  "
+                className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md  hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -144,7 +144,7 @@ export default function Jobs() {
 
               <Link
                 to="/jobinfo"
-                className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md 0"
+                className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -187,7 +187,7 @@ export default function Jobs() {
 
               <Link
                 to="/jobinfo"
-                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -234,7 +234,7 @@ export default function Jobs() {
 
               <Link
                 to="/jobinfo"
-                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -277,7 +277,7 @@ export default function Jobs() {
 
               <Link
                 to="/jobinfo"
-                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -320,7 +320,7 @@ export default function Jobs() {
 
               <Link
                 to="/jobinfo"
-                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -363,7 +363,7 @@ export default function Jobs() {
 
               <Link
                 to="/jobinfo"
-                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover "
@@ -405,12 +405,12 @@ export default function Jobs() {
             {/*end carasoul2*/}
 
             {/*start carasoul3*/}
-            <div className=" container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10  p-4 ml-12 mb-5">
+            <div className=" container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10  p-4 ml-12 mb-5 ">
               {/*card1*/}
 
               <Link
                 to="/jobinfo"
-                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -453,7 +453,7 @@ export default function Jobs() {
 
               <Link
                 to="/jobinfo"
-                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -496,7 +496,7 @@ export default function Jobs() {
 
               <Link
                 to="/jobinfo"
-                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -539,7 +539,7 @@ export default function Jobs() {
 
               <Link
                 to="/jobinfo"
-                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"

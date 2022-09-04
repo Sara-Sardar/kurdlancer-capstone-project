@@ -2,7 +2,7 @@ import ContactDetails from "../pages/ContactDetails";
 
 const contacts = [
   {
-    name: "Sara Sardar",
+    name: "Ali Sardar",
     avatar: "https://source.unsplash.com/ZHvM3XIOHoE/400x400",
   },
   {
@@ -14,7 +14,7 @@ const contacts = [
     avatar: "https://source.unsplash.com/rDEOVtE7vOs/400x400",
   },
   {
-    name: "Shara Mhamad",
+    name: "Shara Raza",
     avatar: "https://source.unsplash.com/mEZ3PoFGs_k/400x400",
   },
   {

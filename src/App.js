@@ -20,7 +20,7 @@ import FreelancerInfo from "./pages/FreelancerInfo";
 import CreateProfile from "./pages/CreateProfile";
 import Emails from "./pages/Emails";
 import AddSkills from "./pages/AddSkills";
-
+import DarkFreelancersProfile from "./pages/DarkProfileFreelancer";
 export default function App() {
   return (
     <div>
@@ -41,6 +41,10 @@ export default function App() {
         <Route path="/createprofile" element={<CreateProfile />} />
         <Route path="/emails" element={<Emails />} />
         <Route path="/addskills" element={<AddSkills />} />
+        <Route
+          path="/darkfreelancersprofile"
+          element={<DarkFreelancersProfile />}
+        />
       </Routes>
 
       {/* <Footer/> */}

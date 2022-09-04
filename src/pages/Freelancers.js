@@ -59,7 +59,7 @@ export default function Freelancers() {
 
               <Link
                 to="/freelancerinfo"
-                className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md "
+                className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -102,7 +102,7 @@ export default function Freelancers() {
 
               <Link
                 to="/freelancerinfo"
-                className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md "
+                className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow"
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -145,7 +145,7 @@ export default function Freelancers() {
 
               <Link
                 to="/freelancerinfo"
-                className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md 0"
+                className="h-min w-64  bg-white pb-4  rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow"
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -188,7 +188,7 @@ export default function Freelancers() {
 
               <Link
                 to="/freelancerinfo"
-                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -235,7 +235,7 @@ export default function Freelancers() {
 
               <Link
                 to="/freelancerinfo"
-                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -278,7 +278,7 @@ export default function Freelancers() {
 
               <Link
                 to="/freelancerinfo"
-                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow "
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -321,7 +321,7 @@ export default function Freelancers() {
 
               <Link
                 to="/freelancerinfo"
-                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow"
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -364,7 +364,7 @@ export default function Freelancers() {
 
               <Link
                 to="/freelancerinfo"
-                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow"
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -411,7 +411,7 @@ export default function Freelancers() {
 
               <Link
                 to="/freelancerinfo"
-                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow"
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -454,7 +454,7 @@ export default function Freelancers() {
 
               <Link
                 to="/freelancerinfo"
-                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow"
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -497,7 +497,7 @@ export default function Freelancers() {
 
               <Link
                 to="/freelancerinfo"
-                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64 pb-2  bg-white rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow"
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
@@ -540,7 +540,7 @@ export default function Freelancers() {
 
               <Link
                 to="/freelancerinfo"
-                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700"
+                className="h-min w-64  pb-2 bg-white rounded-lg  border-gray-200 shadow-md hover:shadow-2xl transition-shadow"
               >
                 <img
                   className="rounded-t-lg h-72 w-96 object-cover"
