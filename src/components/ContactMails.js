@@ -347,7 +347,7 @@ export default function ContactMails() {
       </div>
       <div className="flex justify-center items-end  ">
         <Link
-          to="/emails"
+          to="/contractmodal"
           className="shadow-md hover:shadow-lg m-0 bg-blue-900 hover:bg-blue-800 text-white px-3 py-2 rounded-lg text-sm font-semibold "
         >
           Make Contract

@@ -7,15 +7,16 @@ import "../App.css";
 import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
 import DropdwonSkill from "../components/DropdwonSkill";
+import Trans from "../components/Trans";
 
 //import ContactList from "../components/ContactList";
 
 export default function Home() {
   return (
     <Layout>
+      {" "}
       {/*<Categories/>*/}
       <HeroSection />
-
       {/* freelancer section*/}
       <div className="container mx-auto rounded-md bg-amber-400 pb-2">
         <div className="mt-11 pt-8 pl-8 pb-4">
@@ -34,7 +35,6 @@ export default function Home() {
           <FreelancerCarasoul />
         </div>
       </div>
-
       {/* Jobs section*/}
       <div className="container mx-auto rounded-md  bg-amber-400  ">
         <div className="mt-11 pt-8 pl-8 pb-4">
@@ -50,7 +50,6 @@ export default function Home() {
           <JobsCarasoul />
         </div>
       </div>
-
       {/* Add skils section*/}
       <div className="container mx-auto rounded-md  bg-amber-400  ">
         <div className="mt-11 pt-8 pl-8 ">
@@ -264,7 +263,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/* Top specialest section*/}
       <div className="container mx-auto rounded-md bg-amber-400/5 pb-2">
         <div className="mt-11 pt-8 pl-8 pb-4">
@@ -284,7 +282,7 @@ export default function Home() {
             alt=""
           />
 
-          <div className="w-auto h-64 py-4 px-8 bg-amber-500/50 rounded-lg text-white font-semibold text-lg flex flex-col items-center justify-center ">
+          <div className="w-auto h-64 py-4 px-8 bg-amber-400 hover:bg-amber-500/80 rounded-lg text-white font-semibold text-lg flex flex-col items-center justify-center ">
             <h5 className="mb-2 pt-2 text-xl font-semibold  text-white">
               Name: Dalia Jamal
             </h5>
@@ -295,7 +293,7 @@ export default function Home() {
             </p>
 
             <div className="pl-2 mt-4 flex flex-col justify-center items-center">
-              <p className="inline-flex items-center py-2 px-3 bg-amber-400  text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
+              <p className="inline-flex items-center py-2 px-3 bg-blue-900 hover:bg-blue-800 text-sm font-medium rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
                 View
                 <svg
                   aria-hidden="true"
@@ -323,7 +321,7 @@ export default function Home() {
             alt=""
           />
 
-          <div className="w-auto h-64 py-4 px-8 bg-amber-500/50 rounded-lg text-white font-semibold text-lg flex flex-col items-center justify-center ">
+          <div className="w-auto h-64 py-4 px-8 bg-amber-400 hover:bg-amber-500/80  rounded-lg text-white font-semibold text-lg flex flex-col items-center justify-center ">
             <h5 className="mb-2 pt-2 text-xl font-semibold  text-white">
               Name: Shang Bakhtyar
             </h5>
@@ -333,7 +331,7 @@ export default function Home() {
             </p>
 
             <div className="pl-2 mt-4 flex flex-col justify-center items-center">
-              <p className="inline-flex items-center py-2 px-3 bg-amber-400  text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
+              <p className="inline-flex items-center py-2 px-3 bg-blue-900 hover:bg-blue-800  text-sm font-medium  rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
                 View
                 <svg
                   aria-hidden="true"
@@ -361,7 +359,7 @@ export default function Home() {
             alt=""
           />
 
-          <div className="w-auto h-64 py-4 px-8 bg-amber-500/50 rounded-lg text-white font-semibold text-lg flex flex-col items-center justify-center ">
+          <div className="w-auto h-64 py-4 px-8 bg-amber-400 hover:bg-amber-500/80  rounded-lg text-white font-semibold text-lg flex flex-col items-center justify-center ">
             <h5 className="mb-2 pt-2 text-xl font-semibold  text-white">
               Name: Shene Bahzad
             </h5>
@@ -371,7 +369,7 @@ export default function Home() {
             </p>
 
             <div className="pl-2 mt-4 flex flex-col justify-center items-center">
-              <p className="inline-flex items-center py-2 px-3 bg-amber-400  text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
+              <p className="inline-flex items-center py-2 px-3 bg-blue-900 hover:bg-blue-800   text-sm font-medium  rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
                 View
                 <svg
                   aria-hidden="true"
@@ -391,7 +389,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/*Hearfrom clients*/}
       <div className="container mx-auto  rounded-md  pb-2 ">
         <div className="mt-11 pt-8 pl-8 pb-4 ">
@@ -521,6 +518,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Trans />
     </Layout>
   );
 }

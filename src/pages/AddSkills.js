@@ -7,15 +7,6 @@ import { Carousel } from "react-responsive-carousel";
 export default function AddSkills() {
   return (
     <Layout>
-      <div className="container  rounded-md   mx-auto flex justify-center mt-8 md:mt-0 ">
-        <div className="  ">
-          {" "}
-          <div className=" flex items-center justify-center">
-            <Tabs />
-          </div>
-        </div>
-      </div>
-
       {/*Hero section*/}
       <div className="container rounded-md  bg-amber-400 mx-auto grid grid-cols-1 md:grid-cols-2 mt-8 md:mt-10 ">
         <div className=" my-5 p-8">
@@ -241,6 +232,21 @@ export default function AddSkills() {
                 </Carousel>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      {/*tabs*/}
+      <div className="container  rounded-md   mx-auto flex justify-center mt-8 md:mt-10 ">
+        <div className="  ">
+          {" "}
+          <div className="flex flex-col mb-10 justify-center">
+            <h2 className="text-4xl tracking-tight font-extrabold text-amber-400 sm:text-3xl md:text-3xl  ">
+              Top Required Skills
+              <span className="text-blue-900"> Now a Days :</span>
+            </h2>
+          </div>
+          <div className=" flex items-center justify-center">
+            <Tabs />
           </div>
         </div>
       </div>

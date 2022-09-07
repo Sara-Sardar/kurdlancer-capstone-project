@@ -17,8 +17,8 @@ export default function FreelancersProfile() {
         </div>
       </div>
 
-      <div className="container mx-auto bg-amber-400 p-12 rounded-md ">
-        <div className="grid grid-cols-2 mb-20">
+      <div className="container mx-auto bg-amber-400 pl-40 py-12 rounded-md ">
+        <div className="grid grid-cols-2 mb-10">
           <div>
             <img
               className="rounded-full w-48 h-48 object-cover"
@@ -26,7 +26,7 @@ export default function FreelancersProfile() {
               alt="not loading"
             ></img>
           </div>
-          <div className="pl-44">
+          <div className="pl-44 pt-8">
             <h1 className="text-2xl text-white font-medium mt-2 mb-2">
               Languages
             </h1>

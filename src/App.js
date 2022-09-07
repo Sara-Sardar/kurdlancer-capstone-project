@@ -9,7 +9,7 @@ import Home from "./pages/Home";
 //import Footer from './components/Footer';
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
-import Signin from "./pages/Signin";
+import SignIn from "./pages/SignIn";
 import Signup from "./pages/Signup";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Choose from "./pages/Choose";
@@ -21,6 +21,7 @@ import CreateProfile from "./pages/CreateProfile";
 import Emails from "./pages/Emails";
 import AddSkills from "./pages/AddSkills";
 import DarkFreelancersProfile from "./pages/DarkProfileFreelancer";
+import ContractModal from "./components/ContractModal";
 export default function App() {
   return (
     <div>
@@ -31,7 +32,7 @@ export default function App() {
         <Route path="/postjobs" element={<PostJobs />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/signin" element={<Signin />} />
+        <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/choose" element={<Choose />} />
         <Route path="/freelancersprofile" element={<FreelancersProfile />} />
@@ -45,6 +46,7 @@ export default function App() {
           path="/darkfreelancersprofile"
           element={<DarkFreelancersProfile />}
         />
+        <Route path="/contractmodal" element={<ContractModal />} />
       </Routes>
 
       {/* <Footer/> */}
