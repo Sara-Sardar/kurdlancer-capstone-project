@@ -9,6 +9,7 @@ import Notification from "./Notification";
 import EmailsButton from "./EmailsButton";
 import DarkMode from "./DarkMode";
 import Languages from "./Languages";
+import { useTranslation } from "react-i18next";
 const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "Freelancers", href: "/freelancers", current: false },

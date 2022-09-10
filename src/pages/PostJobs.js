@@ -152,7 +152,7 @@ export default function PostJobs() {
                     {/*chakibka */}
                     <div className="grid grid-cols-4 my-2">
                       {" "}
-                      <div className="col-span-2 bg-orange-900 ">
+                      <div className="col-span-2  ">
                         <label
                           className="text-amber-400 font-medium"
                           htmlFor="usernsme "
@@ -167,7 +167,7 @@ export default function PostJobs() {
                           value="Erbil"
                         />
                       </div>
-                      <div className="col-span-2 lg:ml-10 bg-lime-900">
+                      <div className="col-span-2 lg:ml-10 ">
                         <label
                           className="text-amber-400 font-medium"
                           htmlFor="usernsme "
@@ -270,7 +270,7 @@ export default function PostJobs() {
 
                     <Link
                       to="/jobs"
-                      className="bg-amber-400 mt-7 pl-12 lg:pl-32 px-3 py-2 text-lg font-medium  hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
+                      className="bg-amber-400 mt-7 pl-12 lg:pl-64 px-3 py-2 text-lg font-medium  hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                     >
                       Post Job
                     </Link>

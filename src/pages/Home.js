@@ -8,10 +8,12 @@ import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
 import DropdwonSkill from "../components/DropdwonSkill";
 import Trans from "../components/Trans";
+import { useTranslation } from "react-i18next";
 
 //import ContactList from "../components/ContactList";
 
 export default function Home() {
+  const { t, i18n } = useTranslation();
   return (
     <Layout>
       {" "}
@@ -23,12 +25,12 @@ export default function Home() {
           {" "}
           <div className=" flex flex-col  justify-center">
             <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl ">
-              For Clients, Make it real with the best
-              <span className="text-blue-900 "> Freelancers,</span>
+              {t("For Clients, Make it real with the best")}
+              <span className="text-blue-900 "> {t("Freelancers")}</span>
             </h2>
           </div>
           <p className="text-2xl text-blue-900 mt-3  font-medium ">
-            Hire a pro for any skills.
+            {t("Hire a pro for any skills")}
           </p>
         </div>
         <div>
@@ -41,8 +43,8 @@ export default function Home() {
           {" "}
           <div className="flex flex-col  justify-center">
             <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl  ">
-              For Freelancers, Find Great Works with bigest companies,
-              <span className="text-blue-900"> Make Money.</span>
+              {t("For Freelancers, Find Great Works With Bigest Companies")}{" "}
+              <span className="text-blue-900"> {t("Make Money.")}</span>
             </h2>
           </div>
         </div>
@@ -56,8 +58,8 @@ export default function Home() {
           {" "}
           <div className="flex flex-col  justify-center">
             <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl  ">
-              Hire A Freelancer For Any
-              <span className="text-blue-900"> Skills.</span>
+              {t("Hire A Freelancer For Any")}
+              <span className="text-blue-900"> {t("Skills")}</span>
             </h2>
           </div>
         </div>
@@ -71,7 +73,7 @@ export default function Home() {
                 to="/addskills"
                 className="shadow-md hover:shadow-lg  bg-blue-900 hover:bg-blue-800 text-white px-6 py-4 rounded-lg text-xl font-semibold  lg:mr-4"
               >
-                View Add Skills
+                {t("View Add Skills")}
               </Link>
             </div>
           </div>
@@ -269,8 +271,8 @@ export default function Home() {
           {" "}
           <div className=" flex flex-col  justify-center ">
             <h2 className="text-4xl tracking-tight font-extrabold text-amber-400 sm:text-3xl md:text-3xl ">
-              Top Specialest
-              <span className="text-blue-900 "> Freelancers.</span>
+              {t("Top Specialest")}
+              <span className="text-blue-900 ">{t("Freelancers")} </span>
             </h2>
           </div>
         </div>
@@ -395,8 +397,8 @@ export default function Home() {
           {" "}
           <div>
             <h2 className="text-4xl tracking-tight font-extrabold text-amber-400 sm:text-3xl md:text-3xl ">
-              Hear from some of our
-              <span className="text-blue-900  "> clients.</span>
+              {t("Hear from some of our")}
+              <span className="text-blue-900  "> {t("clients")}</span>
             </h2>
           </div>
           {/*1*/}
