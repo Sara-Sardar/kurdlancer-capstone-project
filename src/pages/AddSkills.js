@@ -4,6 +4,17 @@ import Tabs from "../components/Tabs";
 import { Link } from "react-router-dom";
 import DropdwonSkill from "../components/DropdwonSkill";
 import { Carousel } from "react-responsive-carousel";
+import Select from "react-select";
+
+const options = [
+  { value: "design", label: "Design" },
+  { value: "devloper", label: "Devloper" },
+  { value: "hr", label: "HR" },
+  { value: "marketing", label: "Marketing" },
+  { value: "finance", label: "Finance" },
+  { value: "legal", label: "Legal" },
+  { value: "engineering", label: "Engineering" },
+];
 export default function AddSkills() {
   return (
     <Layout>
@@ -27,16 +38,19 @@ export default function AddSkills() {
       {/*body*/}
       <div className="container mx-auto rounded-md bg-amber-400 pb-2">
         <div className="mt-11 pt-8 pl-8 pb-4">
-          {" "}
           {/* Add skils section*/}
-          <div className="container mx-auto rounded-md   ">
-            <div className="mt-11 pt-8 pl-8 ">
-              {" "}
-              <div className="flex flex-col  justify-center">
-                <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl  ">
-                  Hire A Freelancer For Any
-                  <span className="text-blue-900"> Skills.</span>
-                </h2>
+          <div className="container  mx-auto rounded-md   ">
+            <div className="mt-11  pt-8 pl-8 ">
+              <div className="flex flex-cols justify-around  ">
+                <div>
+                  <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl  ">
+                    Hire A Freelancer For Any
+                    <span className=" text-blue-900"> Skills.</span>
+                  </h2>
+                </div>
+                <div className=" ml-48 w-2/6">
+                  <Select options={options} isMulti={true} />
+                </div>
               </div>
             </div>
 
@@ -240,9 +254,12 @@ export default function AddSkills() {
         <div className="  ">
           {" "}
           <div className="flex flex-col mb-10 justify-center">
-            <h2 className="text-4xl tracking-tight font-extrabold text-amber-400 sm:text-3xl md:text-3xl  ">
+            <h2 className="text-4xl tracking-tight font-bold text-amber-400 sm:text-3xl md:text-3xl  ">
               Top Required Skills
-              <span className="text-blue-900"> Now a Days :</span>
+              <span className="tracking-tight text-blue-900">
+                {" "}
+                Now a Days :
+              </span>
             </h2>
           </div>
           <div className=" flex items-center justify-center">

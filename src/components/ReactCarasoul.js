@@ -13,7 +13,7 @@ export default function ReactCarasoul() {
       showThumbs={false}
     >
       <div>
-        <p className="p-4 absolute top-2 left-1/2 transform -translate-x-1/2  text-md font-medium text-white">
+        <p className="p-4 absolute top-20 left-1/2 transform -translate-x-1/2  text-md font-normal text-white ">
           Ads: You can advertise for your bussiness or products here.
         </p>
         <img

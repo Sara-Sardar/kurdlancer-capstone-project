@@ -5,7 +5,7 @@ import i18n from "i18next";
 import { useTranslation } from "react-i18next";
 export default function Languages() {
   return (
-    <div className="w-14 text-right mr-2">
+    <div className="w-14 text-right mr-2 z-50 ">
       <Menu as="div" className=" w-auto">
         <div>
           <Menu.Button className="rounded-full bg-amber-500 bg-opacity-20 p-3 hover:bg-amber-400 text-sm font-medium text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">

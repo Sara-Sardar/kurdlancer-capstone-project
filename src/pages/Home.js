@@ -76,12 +76,12 @@ export default function Home() {
           <div>
             {/*Dropdown skill */}
             <DropdwonSkill />
-            <div className="my-12 ml-36 lg:ml-72">
+            <div className="my-12 ml-16 md:ml-36 lg:ml-72">
               <Link
                 to="/addskills"
                 className="shadow-md hover:shadow-lg  bg-blue-900 hover:bg-blue-800 text-white px-6 py-4 rounded-lg text-xl font-semibold  lg:mr-4"
               >
-                {t("translation.View Add Skills")}
+                View Add Skills
               </Link>
             </div>
           </div>
