@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 //import ContactList from "../components/ContactList";
 
 export default function Home() {
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation("common");
   return (
     <Layout>
       {" "}
@@ -25,12 +25,15 @@ export default function Home() {
           {" "}
           <div className=" flex flex-col  justify-center">
             <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl ">
-              {t("For Clients, Make it real with the best")}
-              <span className="text-blue-900 "> {t("Freelancers")}</span>
+              {t("translation.For Clients, Make it real with the best")}
+              <span className="text-blue-900 ">
+                {" "}
+                {t("translation.Freelancers")}
+              </span>
             </h2>
           </div>
           <p className="text-2xl text-blue-900 mt-3  font-medium ">
-            {t("Hire a pro for any skills")}
+            {t("translation.Hire a pro for any skills")}
           </p>
         </div>
         <div>
@@ -43,8 +46,13 @@ export default function Home() {
           {" "}
           <div className="flex flex-col  justify-center">
             <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl  ">
-              {t("For Freelancers, Find Great Works With Bigest Companies")}{" "}
-              <span className="text-blue-900"> {t("Make Money.")}</span>
+              {t(
+                "translation.For Freelancers, Find Great Works With Bigest Companies"
+              )}{" "}
+              <span className="text-blue-900">
+                {" "}
+                {t("translation.Make Money.")}
+              </span>
             </h2>
           </div>
         </div>
@@ -58,8 +66,8 @@ export default function Home() {
           {" "}
           <div className="flex flex-col  justify-center">
             <h2 className="text-4xl tracking-tight font-extrabold text-white sm:text-3xl md:text-3xl  ">
-              {t("Hire A Freelancer For Any")}
-              <span className="text-blue-900"> {t("Skills")}</span>
+              {t("translation.Hire A Freelancer For Any")}
+              <span className="text-blue-900"> {t("translation.Skills")}</span>
             </h2>
           </div>
         </div>
@@ -73,7 +81,7 @@ export default function Home() {
                 to="/addskills"
                 className="shadow-md hover:shadow-lg  bg-blue-900 hover:bg-blue-800 text-white px-6 py-4 rounded-lg text-xl font-semibold  lg:mr-4"
               >
-                {t("View Add Skills")}
+                {t("translation.View Add Skills")}
               </Link>
             </div>
           </div>
@@ -271,8 +279,10 @@ export default function Home() {
           {" "}
           <div className=" flex flex-col  justify-center ">
             <h2 className="text-4xl tracking-tight font-extrabold text-amber-400 sm:text-3xl md:text-3xl ">
-              {t("Top Specialest")}
-              <span className="text-blue-900 ">{t("Freelancers")} </span>
+              {t("translation.Top Specialest")}
+              <span className="text-blue-900 ">
+                {t("translation.Freelancers")}{" "}
+              </span>
             </h2>
           </div>
         </div>
@@ -397,8 +407,11 @@ export default function Home() {
           {" "}
           <div>
             <h2 className="text-4xl tracking-tight font-extrabold text-amber-400 sm:text-3xl md:text-3xl ">
-              {t("Hear from some of our")}
-              <span className="text-blue-900  "> {t("clients")}</span>
+              {t("translation.Hear from some of our")}
+              <span className="text-blue-900  ">
+                {" "}
+                {t("translation.clients")}
+              </span>
             </h2>
           </div>
           {/*1*/}

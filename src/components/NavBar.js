@@ -5,7 +5,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { Link, NavLink } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import Languages from "./Languages";
-
+import { useTranslation } from "react-i18next";
 const navigation = [
   { name: "Home", href: "/", current: true },
   { name: "Freelancers", href: "/freelancers", current: false },
@@ -21,6 +21,7 @@ function classNames(...classes) {
   /*fixed w-full z-20 top-0 left-0*/
 }
 export default function NavBar() {
+  const { t, i18n } = useTranslation("common");
   const auth = useSelector((state) => state.auth.isAuthenticated);
   useEffect(() => {
     console.log("the state of auth is :", auth);
