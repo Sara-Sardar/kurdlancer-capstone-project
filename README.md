@@ -31,20 +31,20 @@ The goal of the project is to create an easy freelancing website to make more op
 
 ---
 
-The tools:
+The Tools:
 VS-code
 React, React Dom, Link
 Axios,
 Heroicon,
 Tailwind,
 Headlessui,
-flowbite,
+Flowbite,
 ...etc.
 
 ---
 
 My Role
-UX/UI Designer
+UX/UI Designer ,
 Front-End Devloper
 
 ## API Used [Faker Store Api](https://fakestoreapi.com/docs).
