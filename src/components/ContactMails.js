@@ -4,7 +4,7 @@ import { ellipsis, vertical } from "@heroicons/react/solid";
 export default function ContactMails() {
   return (
     <div>
-      <div className="container mx-auto w-fit  flex justify-center items-center bg-amber-500/50 rounded-md m-10 ">
+      <div className="container mx-auto w-fit  flex justify-center items-center bg-amber-400/70 rounded-md m-10 ">
         <div className="  m-10 ">
           {/*1*/}
           <div className="flex items-center  mb-4 shadow-md w-64 p-2 bg-white rounded-md">

@@ -14,7 +14,7 @@ export default function () {
       showThumbs={false}
     >
       {/*start carasoul1*/}
-      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pl-0 pb-10 ml-20 mt-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-y-7 gap-x-0 pl-0 pb-5 ml-20 ">
         {/*card1*/}
 
         <Link
@@ -180,7 +180,7 @@ export default function () {
       {/*end carasoul1*/}
 
       {/*start carasoul2*/}
-      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pl-0 pb-10 ml-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-y-7 gap-x-0 pl-0 pb-5 ml-20">
         {/*card1*/}
 
         <Link
@@ -348,7 +348,7 @@ export default function () {
       {/*end carasoul2*/}
 
       {/*start carasoul3*/}
-      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 pl-0 pb-10 ml-20">
+      <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-y-7 gap-x-0 pl-0 pb-5 ml-20">
         {/*card1*/}
 
         <Link

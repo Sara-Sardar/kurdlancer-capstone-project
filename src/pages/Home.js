@@ -36,12 +36,12 @@ export default function Home() {
             {t("translation.Hire a pro for any skills")}
           </p>
         </div>
-        <div>
+        <div className="mt-5">
           <FreelancerCarasoul />
         </div>
       </div>
       {/* Jobs section*/}
-      <div className="container mx-auto rounded-md  bg-amber-400  ">
+      <div className="container mx-auto rounded-md  bg-amber-400  pb-2">
         <div className="mt-11 pt-8 pl-8 pb-4">
           {" "}
           <div className="flex flex-col  justify-center">
@@ -49,14 +49,14 @@ export default function Home() {
               {t(
                 "translation.For Freelancers, Find Great Works With Bigest Companies"
               )}{" "}
-              <span className="text-blue-900">
+              <span className="text-blue-900 ">
                 {" "}
                 {t("translation.Make Money.")}
               </span>
             </h2>
           </div>
         </div>
-        <div>
+        <div className="mt-5">
           <JobsCarasoul />
         </div>
       </div>

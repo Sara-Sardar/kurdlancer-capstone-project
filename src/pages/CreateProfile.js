@@ -48,55 +48,58 @@ export default function CreateProfile() {
       </div>
 
       {/*body*/}
-      <div className="container mx-auto h-full rounded-md  bg-amber-400 mt-10 ">
+      <div className="container mx-auto min-h-screen rounded-md  bg-amber-400 mt-10  flex justify-center items-center">
         <div className=" text-white ">
-          <div className="p-10 m-10">
-            <p className=" text-4xl font-medium py-4">Lets Create Profile</p>
-            <p className="text-xl mb-10">Fill the below form :</p>
+          <div className=" mt-10">
+            <div className="flex justify-center">
+              <p className=" text-4xl font-medium ">Lets Create Profile</p>
+            </div>
 
+            <div className="flex justify-center">
+              <p className="text-xl mt-4 ">Fill the below form</p>
+            </div>
             {/*start form*/}
-            <div className="bg-amber-400 min-h-screen p-10 flex items-center justify-center rounded-lg ">
-              <div className="container mx-auto flex items-center justify-center  w-1/2">
-                <div className="bg-white p-10 rounded-lg shadow-xl w-full">
-                  <form className="grid grid-cols-1" action="/action_page.php">
-                    <h2 className="text-center mb-5 text-3xl font-semibold text-amber-400">
+            <div className=" min-h-screen  flex  items-center justify-center my-10">
+              <div className="container mx-auto flex items-center justify-center">
+                <div className="bg-white p-10 rounded-lg shadow-xl w-96">
+                  <form className="grid grid-cols-1" onSubmit={submitHandler}>
+                    <h2 className="text-center mb-5 text-2xl font-bold text-amber-400">
                       Create Profile Form
                     </h2>
-
-                    <label
-                      className="text-amber-400 font-medium"
-                      htmlFor="usernsme "
-                    >
+                    <h2 className="text-center mb-3 text-md font-normal text-amber-400">
                       Create Your Profile Using
-                    </label>
-                    <input
-                      className='bg-gray-100 text-gray-400 p-2 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
-                      type="text"
-                      name="usernsme"
-                      id="usernsme"
-                      value="Import from Linkedin"
-                    />
-                    <input
-                      className='bg-gray-100 text-gray-400 p-2 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
-                      type="text"
-                      name="usernsme"
-                      id="usernsme"
-                      value="Aplod your resume"
-                    />
-                    <input
-                      className='bg-gray-100 text-gray-400 p-2 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
-                      type="text"
-                      name="usernsme"
-                      id="usernsme"
-                      value="Fill out manually ( 15 min )"
-                    />
+                    </h2>
+                    <div className="flex flex-col justify-center">
+                      <Link
+                        to="/createprofile"
+                        className="m-3 pl-16 outline outline-2 outline-offset-2 outline-amber-400 shadow-md hover:shadow-lg    text-amber-400 px-2 py-1 rounded-sm text-md font-semibold mr-4"
+                      >
+                        Import from Linkedin
+                      </Link>
 
-                    <p
-                      className="align-middle text-amber-400 font-medium"
-                      htmlFor="usernsme "
+                      <Link
+                        to="/createprofile"
+                        className="m-3 pl-16 outline outline-2 outline-offset-2 outline-amber-400 shadow-md hover:shadow-lg    text-amber-400 px-2 py-1 rounded-sm text-md font-semibold mr-4"
+                      >
+                        Uplod your resume
+                      </Link>
+                      <Link
+                        to="/createprofile"
+                        className="m-3 mb-5 pl-10 outline outline-2 outline-offset-2 outline-amber-400 shadow-md hover:shadow-lg    text-amber-400 px-2 py-1 rounded-sm text-md font-semibold mr-4"
+                      >
+                        Fill out manually ( 15 min )
+                      </Link>
+                    </div>
+                    <div className="grid grid-cols-1 divide-y-2 m-3">
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <div
+                      className=" my-5  text-amber-400 font-medium"
+                      htmlFor="usernsme"
                     >
-                      Are You Ready To Create Your Profile? Lets Start
-                    </p>
+                      Are You Ready To Create Your Profile ? Lets Start
+                    </div>
 
                     <label
                       className="text-amber-400 font-medium"
@@ -115,7 +118,7 @@ export default function CreateProfile() {
                       className="text-amber-400 font-medium"
                       htmlFor="usernsme "
                     >
-                      Password
+                      Password:
                     </label>
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
@@ -128,7 +131,7 @@ export default function CreateProfile() {
                       className="text-amber-400 font-medium"
                       htmlFor="usernsme "
                     >
-                      Email
+                      Email:
                     </label>
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
@@ -139,32 +142,32 @@ export default function CreateProfile() {
                     />
 
                     {/*chakikrawa done*/}
-                    <div className="grid grid-cols-4 my-2">
+                    <div className="grid grid-cols-4 ">
                       {" "}
-                      <div className="col-span-2 ">
+                      <div className="col-span-1  ">
                         <label
                           className="text-amber-400 font-medium"
                           htmlFor="usernsme "
                         >
-                          Gender
+                          Gender:
                         </label>
                         <input
-                          className='ml-2 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
+                          className="w-24  bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                           type="text"
                           name="usernsme"
                           id="usernsme"
-                          value="Choose Gender"
+                          value="Male "
                         />
                       </div>
-                      <div className="col-span-2 ml-8">
+                      <div className="col-span-2 ml-32 w-full">
                         <label
-                          className="text-amber-400  font-medium"
+                          className="text-amber-400 font-medium"
                           htmlFor="usernsme "
                         >
-                          Birthday
+                          Birthday:
                         </label>
                         <input
-                          className='ml-2 bg-gray-100 pr-5 text-gray-400 p-1  font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
+                          className=" w-24 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                           type="text"
                           name="usernsme"
                           id="usernsme"
@@ -174,32 +177,32 @@ export default function CreateProfile() {
                     </div>
                     {/*chakikrawa done*/}
                     {/*chakikrawa done*/}
-                    <div className="grid grid-cols-4 my-2">
+                    <div className="grid grid-cols-4 ">
                       {" "}
-                      <div className="col-span-2 ">
+                      <div className="col-span-1  ">
                         <label
                           className="text-amber-400 font-medium"
                           htmlFor="usernsme "
                         >
-                          City
+                          City:
                         </label>
                         <input
-                          className='ml-2 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
+                          className="w-24  bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                           type="text"
                           name="usernsme"
                           id="usernsme"
-                          value="Erbil"
+                          value="Erbil "
                         />
                       </div>
-                      <div className="col-span-2 ml-10">
+                      <div className="col-span-2 ml-32 w-full">
                         <label
                           className="text-amber-400 font-medium"
                           htmlFor="usernsme "
                         >
-                          Zip Code
+                          Zip Code:
                         </label>
                         <input
-                          className='ml-2 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
+                          className=" w-24 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                           type="text"
                           name="usernsme"
                           id="usernsme"
@@ -212,7 +215,7 @@ export default function CreateProfile() {
                       className="text-amber-400 font-medium "
                       htmlFor="password"
                     >
-                      Phone Number
+                      Phone Number:
                     </label>
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
@@ -225,7 +228,7 @@ export default function CreateProfile() {
                       className="text-amber-400 font-medium"
                       htmlFor="usernsme "
                     >
-                      Work Number
+                      Work Number:
                     </label>
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
@@ -237,26 +240,26 @@ export default function CreateProfile() {
 
                     <div className="flex flex-row my-3 ">
                       <label
-                        className="text-amber-400 font-medium mt-2 "
+                        className="text-amber-400 font-medium mt-4 "
                         htmlFor="usernsme "
                       >
-                        Upload your picture
+                        Upload your picture:
                       </label>
                       <button
                         type="file"
                         id="myFile"
                         name="filename"
-                        className="ml-72 px-2 py-1 mb-2 bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
+                        className="ml-12 lg:ml-20 px-2 py-1 mb-2 bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                       >
                         Upload
                       </button>
                     </div>
 
                     <label
-                      className="text-amber-400 mb-1 font-medium mt-5"
+                      className="text-amber-400 mb-1 font-medium mt-3"
                       htmlFor="usernsme "
                     >
-                      Comment
+                      Comment:
                     </label>
                     <textarea
                       className='bg-gray-100 rounded-md mb-3  text-gray-400  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
@@ -266,7 +269,7 @@ export default function CreateProfile() {
 
                     <Link
                       to="/freelancersprofile"
-                      className="bg-amber-400 mt-7 pl-64 px-3 py-2 text-lg font-medium  hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
+                      className="bg-amber-400 mt-7 pl-24 px-3 py-2 text-lg font-medium  hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                     >
                       Create Profile
                     </Link>

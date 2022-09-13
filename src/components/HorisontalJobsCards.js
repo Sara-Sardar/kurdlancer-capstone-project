@@ -10,7 +10,7 @@ export default function HorisontalJobsCards() {
       {/*card 1*/}
       <Link
         to={"/jobs"}
-        className="container mt-5 mx-auto grid grid-cols-2 divide-x-2 rounded-md  bg-blue-900 py-5 shadow-md hover:shadow-2xl transition-shadow"
+        className="container mt-10 mx-auto w-3/4 grid grid-cols-2 divide-x-2 rounded-md  bg-blue-900 py-5 shadow-md hover:shadow-2xl transition-shadow"
       >
         <div className="px-10">
           <h2 className="text-md text-white font-medium mt-2 mb-2">
@@ -51,9 +51,9 @@ export default function HorisontalJobsCards() {
             View
           </button>
         </div>
-        <div className="pt-5 pl-56">
+        <div className="pt-2 pl-48 mr-10">
           <img
-            className="rounded w-1/2"
+            className="rounded w-auto "
             src="https://cards2pay.com/wp-content/uploads/2021/05/asiacell.png"
             alt="not loading"
           />
@@ -63,18 +63,18 @@ export default function HorisontalJobsCards() {
       {/*card 2*/}
       <Link
         to={"/jobs"}
-        className="container mt-5 mx-auto grid grid-cols-2 divide-x-2 rounded-md  bg-blue-900 py-5 shadow-md hover:shadow-2xl transition-shadow"
+        className="container mt-5 mx-auto grid grid-cols-2 divide-x-2 rounded-md w-3/4 bg-blue-900 py-5 shadow-md hover:shadow-2xl transition-shadow"
       >
         <div className="px-10">
           <h2 className="text-md text-white font-medium mt-2 mb-2">
-            Company Name: Asia cell
+            Company Name: Zain
           </h2>
           <p className="text-sm text-white text-justify">
-            Job position: Website desiner
+            Job position: Mobile Application Design
           </p>
           <p className="text-sm text-white text-justify">Location: Erbil</p>
           <p className="text-sm text-white text-justify">
-            Skills requierd: UX/UI Designer
+            Skills requierd: Flutter Devloper
           </p>
           <p className="text-sm text-white text-justify mb-5">Payment: 700$</p>
 
@@ -106,10 +106,10 @@ export default function HorisontalJobsCards() {
             View
           </button>
         </div>
-        <div className="pt-5 pl-56">
+        <div className="pt-1 pl-48 mr-10">
           <img
-            className="rounded w-1/2"
-            src="https://cards2pay.com/wp-content/uploads/2021/05/asiacell.png"
+            className="rounded w-auto"
+            src="https://ik.imagekit.io/tp/20220131-zain-saoedi-arabia-logo.png"
             alt="not loading"
           />
         </div>
@@ -118,18 +118,18 @@ export default function HorisontalJobsCards() {
       {/*card 3*/}
       <Link
         to={"/jobs"}
-        className="container mt-5 mx-auto grid grid-cols-2 divide-x-2 rounded-md  bg-blue-900 py-5 mb-20 shadow-md hover:shadow-2xl transition-shadow "
+        className="container w-3/4 mt-5 mx-auto grid grid-cols-2 divide-x-2 rounded-md  bg-blue-900 py-5 mb-20 shadow-md hover:shadow-2xl transition-shadow "
       >
         <div className="px-10">
           <h2 className="text-md text-white font-medium mt-2 mb-2">
-            Company Name: Asia cell
+            Company Name: Rwanga Foundation
           </h2>
           <p className="text-sm text-white text-justify">
-            Job position: Website desiner
+            Job position: Website Design
           </p>
           <p className="text-sm text-white text-justify">Location: Erbil</p>
           <p className="text-sm text-white text-justify">
-            Skills requierd: UX/UI Designer
+            Skills requierd: Front-End Devloper
           </p>
           <p className="text-sm text-white text-justify mb-5">Payment: 700$</p>
 
@@ -161,10 +161,10 @@ export default function HorisontalJobsCards() {
             View
           </button>
         </div>
-        <div className="pt-5 pl-56">
+        <div className="pt-3 pl-48 mr-10">
           <img
-            className="rounded w-1/2"
-            src="https://cards2pay.com/wp-content/uploads/2021/05/asiacell.png"
+            className="rounded w-auto h-52"
+            src="https://lumark.agency/images/Photo-1643632740857.jpeg"
             alt="not loading"
           />
         </div>

@@ -79,20 +79,19 @@ export default function PostJobs() {
       </div>
 
       {/*body*/}
-      <div className="container mx-auto min-h-screen rounded-md  bg-amber-400 mt-10">
+      <div className="container mx-auto min-h-screen rounded-md  bg-amber-400 mt-10  flex justify-center items-center">
         <div className=" text-white ">
-          <div className="p-10 m-10">
-            <p className=" text-4xl font-medium py-4">
-              Lets start posting a job,
-            </p>
-            <p className="text-xl mb-10">Fill the below form :</p>
-
+          <div className=" mt-10">
+            <p className=" text-4xl font-medium ">Lets start posting a job,</p>
+            <div className="flex justify-center">
+              <p className="text-xl mt-5 ">Fill the below form</p>
+            </div>
             {/*start form*/}
-            <div className=" min-h-screen p-10 flex items-center justify-center rounded-lg mt-10">
+            <div className=" min-h-screen  flex items-center justify-center my-10">
               <div className="container mx-auto flex items-center justify-center">
-                <div className="bg-white p-10 rounded-lg shadow-xl w-96 lg:w-1/2">
-                  <form className="grid grid-cols-1" action="/action_page.php">
-                    <h2 className="text-center mb-5 text-3xl font-semibold text-amber-400">
+                <div className="bg-white p-10 rounded-lg shadow-xl w-96">
+                  <form className="grid grid-cols-1" onSubmit={submitHandler}>
+                    <h2 className="text-center mb-5 text-2xl font-bold text-amber-400">
                       Post a job form
                     </h2>
 
@@ -150,9 +149,9 @@ export default function PostJobs() {
                     />
 
                     {/*chakibka */}
-                    <div className="grid grid-cols-4 my-2">
+                    <div className="grid grid-cols-4 ">
                       {" "}
-                      <div className="col-span-2  ">
+                      <div className="col-span-1  ">
                         <label
                           className="text-amber-400 font-medium"
                           htmlFor="usernsme "
@@ -160,14 +159,14 @@ export default function PostJobs() {
                           City:
                         </label>
                         <input
-                          className=' bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
+                          className="w-24  bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                           type="text"
                           name="usernsme"
                           id="usernsme"
-                          value="Erbil"
+                          value="Erbil "
                         />
                       </div>
-                      <div className="col-span-2 lg:ml-10 ">
+                      <div className="col-span-2 ml-32 w-full">
                         <label
                           className="text-amber-400 font-medium"
                           htmlFor="usernsme "
@@ -175,7 +174,7 @@ export default function PostJobs() {
                           Zip Code:
                         </label>
                         <input
-                          className=' bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
+                          className=" w-24 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                           type="text"
                           name="usernsme"
                           id="usernsme"
@@ -229,20 +228,20 @@ export default function PostJobs() {
                         className="text-amber-400 font-medium mt-2 "
                         htmlFor="usernsme "
                       >
-                        Upload a sample of the requied work:{" "}
+                        Upload sample of requied work:{" "}
                       </label>
                       <button
                         type="file"
                         id="myFile"
                         name="filename"
-                        className="ml-24 lg:ml-72 px-2 py-1 mb-2 bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
+                        className="ml-12 lg:ml-20 px-2 py-1 mb-2 bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                       >
                         Upload
                       </button>
                     </div>
                     <div className="flex flex-row my-3 ">
                       <label
-                        className="text-amber-400 font-medium  pr-20"
+                        className="text-amber-400 font-medium pr-20"
                         htmlFor="usernsme "
                       >
                         Upload an image:
@@ -251,7 +250,7 @@ export default function PostJobs() {
                         type="file"
                         id="myFile"
                         name="filename"
-                        className=" ml-24 lg:ml-72  px-2 py-1  bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
+                        className=" ml-12 lg:ml-20 px-2 py-1 mb-2 bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                       >
                         Upload
                       </button>
@@ -270,7 +269,7 @@ export default function PostJobs() {
 
                     <Link
                       to="/jobs"
-                      className="bg-amber-400 mt-7 pl-12 lg:pl-64 px-3 py-2 text-lg font-medium  hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
+                      className="bg-amber-400 mt-7 pl-12 lg:pl-28 px-3 py-2 text-lg font-medium  hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                     >
                       Post Job
                     </Link>

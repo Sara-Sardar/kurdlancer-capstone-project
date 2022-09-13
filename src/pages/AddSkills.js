@@ -77,10 +77,7 @@ export default function AddSkills() {
                   <div className=" grid grid-cols-1  pl-96 pb-10 ml-96 mt-5 ">
                     {/*card1*/}
 
-                    <Link
-                      to="./freelancers"
-                      className="h-min w-96  bg-white pb-4  rounded-lg  border-gray-200 shadow-md "
-                    >
+                    <div className="h-min w-96  bg-white pb-4  rounded-lg  border-gray-200 shadow-md ">
                       <img
                         className="rounded-t-lg h-72 w-96 object-cover"
                         src="https://images.unsplash.com/photo-1621140122187-3c03fe00d223?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
@@ -98,7 +95,10 @@ export default function AddSkills() {
                         Location:Slemani
                       </p>
 
-                      <p className="inline-flex items-center py-2 px-10 bg-amber-400  text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
+                      <Link
+                        to="./freelancers"
+                        className="inline-flex items-center py-2 px-10 bg-amber-400  text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white"
+                      >
                         View
                         <svg
                           aria-hidden="true"
@@ -113,8 +113,8 @@ export default function AddSkills() {
                             clipRule="evenodd"
                           ></path>
                         </svg>
-                      </p>
-                    </Link>
+                      </Link>
+                    </div>
                   </div>
 
                   {/*card2*/}
@@ -140,7 +140,7 @@ export default function AddSkills() {
                         Location: Erbil
                       </p>
 
-                      <p className="inline-flex items-center py-2 px-10 bg-amber-400 text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
+                      <p className="inline-flex items-center py-2 px-10 bg-amber-400 text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white ">
                         View
                         <svg
                           aria-hidden="true"
@@ -181,7 +181,7 @@ export default function AddSkills() {
                         Location: Dhok
                       </p>
 
-                      <p className="inline-flex items-center py-2 px-10 bg-amber-400  text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
+                      <p className="inline-flex items-center py-2 px-10 bg-amber-400  text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white">
                         View
                         <svg
                           aria-hidden="true"
@@ -223,7 +223,7 @@ export default function AddSkills() {
                         Location: Dhok
                       </p>
 
-                      <p className="inline-flex items-center py-2 px-10 bg-amber-400 text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white">
+                      <p className="inline-flex items-center py-2 px-10 bg-amber-400 text-sm font-medium hover:bg-amber-300 rounded-md text-white hover:text-white">
                         View
                         <svg
                           aria-hidden="true"

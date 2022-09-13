@@ -10,7 +10,7 @@ export default function DropdwonSkill() {
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 shadow-md hover:shadow-lg  hover:bg-blue-800">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white  shadow-md hover:shadow-lg  hover:bg-blue-800">
                 <span>Development And IT</span>
                 <ChevronUpIcon
                   className={`${
@@ -51,7 +51,7 @@ export default function DropdwonSkill() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 shadow-md hover:shadow-lg  hover:bg-blue-800">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white shadow-md hover:shadow-lg  hover:bg-blue-800">
                 <span>Design And Creative</span>
                 <ChevronUpIcon
                   className={`${
@@ -90,7 +90,7 @@ export default function DropdwonSkill() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 shadow-md hover:shadow-lg  hover:bg-blue-800">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white  shadow-md hover:shadow-lg  hover:bg-blue-800">
                 <span>Sales And Marketing</span>
                 <ChevronUpIcon
                   className={`${
@@ -129,7 +129,7 @@ export default function DropdwonSkill() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 shadow-md hover:shadow-lg  hover:bg-blue-800">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white shadow-md hover:shadow-lg  hover:bg-blue-800">
                 <span>Writing And Translation</span>
                 <ChevronUpIcon
                   className={`${
@@ -170,7 +170,7 @@ export default function DropdwonSkill() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 shadow-md hover:shadow-lg  hover:bg-blue-800">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white shadow-md hover:shadow-lg  hover:bg-blue-800">
                 <span>HR & Training</span>
                 <ChevronUpIcon
                   className={`${
@@ -213,7 +213,7 @@ export default function DropdwonSkill() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 shadow-md hover:shadow-lg  hover:bg-blue-800">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white shadow-md hover:shadow-lg  hover:bg-blue-800">
                 <span>Finance & Accounting</span>
                 <ChevronUpIcon
                   className={`${
@@ -252,7 +252,7 @@ export default function DropdwonSkill() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 shadow-md hover:shadow-lg  hover:bg-blue-800">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white shadow-md hover:shadow-lg  hover:bg-blue-800">
                 <span>Legal </span>
                 <ChevronUpIcon
                   className={`${
@@ -295,7 +295,7 @@ export default function DropdwonSkill() {
         <Disclosure as="div" className="mt-2">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75 shadow-md hover:shadow-lg  hover:bg-blue-800">
+              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-blue-900  px-4 py-2 text-left text-sm font-medium text-white shadow-md hover:shadow-lg  hover:bg-blue-800">
                 <span>Engineering & Architecture </span>
                 <ChevronUpIcon
                   className={`${

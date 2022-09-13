@@ -147,7 +147,7 @@ export default function Example() {
               className={({ selected }) =>
                 classNames(
                   "w-full rounded-lg py-2.5 px-2 text-sm font-medium leading-5 text-amber-500",
-                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-amber-400 focus:outline-none focus:ring-2",
+                  "ring-white ring-opacity-60 ring-offset-2 ring-offset-amber-400 ",
                   selected
                     ? "bg-white shadow"
                     : "text-white hover:bg-amber-400 hover:text-white"
@@ -164,7 +164,7 @@ export default function Example() {
               key={idx}
               className={classNames(
                 "rounded-xl bg-amber-400 p-3",
-                "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2"
+                "ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 "
               )}
             >
               <ul>
@@ -186,10 +186,10 @@ export default function Example() {
                     </ul>
 
                     <a
-                      href="#"
+                      href="/addskills"
                       className={classNames(
                         "absolute inset-0 rounded-md",
-                        "ring-blue-400 focus:z-10 focus:outline-none focus:ring-2"
+                        "ring-blue-400 "
                       )}
                     />
                   </li>
