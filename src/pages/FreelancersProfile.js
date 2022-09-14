@@ -6,7 +6,7 @@ export default function FreelancersProfile() {
   return (
     <SecondLayout>
       <div className="container mx-auto text-white m-10">
-        <div className="container mx-auto h-60  p-12 rounded-md  bg-amber-400 ">
+        <div className="container mx-auto h-60  p-12 rounded-md  bg-amber-400 dark:bg-blue-900 ">
           <div className=" text-white md:flex flex  space-x-96">
             <div className="p-5 my-5 mx-10">
               <p className="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-5xl">
@@ -17,7 +17,7 @@ export default function FreelancersProfile() {
         </div>
       </div>
 
-      <div className="container mx-auto bg-amber-400 pl-40 py-12 rounded-md ">
+      <div className="container mx-auto bg-amber-400 dark:bg-blue-900 pl-40 py-12 rounded-md ">
         <div className="grid grid-cols-2 mb-10">
           <div>
             <img
@@ -65,7 +65,7 @@ export default function FreelancersProfile() {
         </div>
       </div>
 
-      <div className="container mx-auto  p-12 rounded-md mt-10 bg-amber-400">
+      <div className="container mx-auto  p-12 rounded-md mt-10 bg-amber-400 dark:bg-blue-900/50">
         <HorisontalJobsCards />
       </div>
     </SecondLayout>

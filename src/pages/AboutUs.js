@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../layouts/MainLayout";
+import LeafletMap from "../components/LeafletMap";
 export default function AboutUs() {
   return (
     <Layout>
@@ -14,7 +15,7 @@ export default function AboutUs() {
           </div>
         </div>
 
-        <div className="container mx-auto h-screen py-10 px-36 rounded-md  shadow-md my-10 ">
+        <div className="container mx-auto h-full py-10 px-36 rounded-md shadow-md my-10 ">
           <div className=" text-blue-900  ">
             <div className="pb-5 mb-5">
               <p className=" text-2xl tracking-tight font-bold text-amber-400 sm:text-2xl md:text-4xl pb-3">
@@ -74,6 +75,14 @@ export default function AboutUs() {
             <div className="mt-10 md:flex flex justify-around  space-x-10 ">
               <p className="text-sm font-normal ">Total Jobs Posted:20,300</p>
               <p className="text-sm font-normal ">Registered Users:56,000</p>
+            </div>
+            <div className=" flex justify-center mt-20">
+              <div className="text-lg  tracking-tight font-bold text-amber-400 sm:text-2xl md:text-4xl ">
+                Find us on maps!
+              </div>
+            </div>
+            <div className="mb-10">
+              <LeafletMap />
             </div>
           </div>
         </div>

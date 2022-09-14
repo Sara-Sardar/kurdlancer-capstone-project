@@ -110,8 +110,8 @@ export default function CreateProfile() {
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
                       type="text"
-                      name="usernsme"
-                      id="usernsme"
+                      name="text"
+                      id="text"
                       value="Enter Your Name"
                     />
                     <label
@@ -122,9 +122,9 @@ export default function CreateProfile() {
                     </label>
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
-                      type="text"
-                      name="usernsme"
-                      id="usernsme"
+                      type="password"
+                      name="password"
+                      id="password"
                       value="Enter Your Password"
                     />
                     <label
@@ -135,30 +135,32 @@ export default function CreateProfile() {
                     </label>
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
-                      type="text"
-                      name="usernsme"
-                      id="usernsme"
+                      type="email"
+                      name="email"
+                      id="email"
                       value="name@gmail.com"
                     />
 
                     {/*chakikrawa done*/}
                     <div className="grid grid-cols-4 ">
-                      {" "}
                       <div className="col-span-1  ">
                         <label
+                          for="Gender"
                           className="text-amber-400 font-medium"
-                          htmlFor="usernsme "
                         >
                           Gender:
                         </label>
-                        <input
+                        <select
+                          id="Gender"
+                          name="Gender"
                           className="w-24  bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
-                          type="text"
-                          name="usernsme"
-                          id="usernsme"
-                          value="Male "
-                        />
+                        >
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                          <option value="fiat">Others</option>
+                        </select>
                       </div>
+
                       <div className="col-span-2 ml-32 w-full">
                         <label
                           className="text-amber-400 font-medium"
@@ -168,9 +170,9 @@ export default function CreateProfile() {
                         </label>
                         <input
                           className=" w-24 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
-                          type="text"
-                          name="usernsme"
-                          id="usernsme"
+                          type="date"
+                          name="date"
+                          id="date"
                           value="DD/MM/YYYY"
                         />
                       </div>
@@ -181,31 +183,35 @@ export default function CreateProfile() {
                       {" "}
                       <div className="col-span-1  ">
                         <label
+                          for="City"
                           className="text-amber-400 font-medium"
-                          htmlFor="usernsme "
                         >
                           City:
                         </label>
-                        <input
+                        <select
+                          id="City"
+                          name="City"
                           className="w-24  bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
-                          type="text"
-                          name="usernsme"
-                          id="usernsme"
-                          value="Erbil "
-                        />
+                        >
+                          <option value="Erbil">Erbil</option>
+                          <option value="Slemani">Slemani</option>
+                          <option value="Dhok">Dhok</option>
+                          <option value="Kerkuk">Kerkuk</option>
+                          <option value="Halabja">Halabja</option>
+                        </select>
                       </div>
                       <div className="col-span-2 ml-32 w-full">
                         <label
                           className="text-amber-400 font-medium"
-                          htmlFor="usernsme "
+                          htmlFor="number "
                         >
                           Zip Code:
                         </label>
                         <input
                           className=" w-24 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
-                          type="text"
-                          name="usernsme"
-                          id="usernsme"
+                          type="number"
+                          name="number"
+                          id="number"
                           value="#####"
                         />
                       </div>
@@ -219,9 +225,9 @@ export default function CreateProfile() {
                     </label>
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
-                      type="text"
-                      name="password"
-                      id="password"
+                      type="number"
+                      name="number"
+                      id="number"
                       value="+941(#### ### ## ##)"
                     />
                     <label
@@ -230,18 +236,21 @@ export default function CreateProfile() {
                     >
                       Work Number:
                     </label>
+
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
-                      type="text"
-                      name="usernsme"
-                      id="usernsme"
-                      value="+941(#### ### ## ##)"
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                      required
+                      value="+941-(#### ### ## ##)"
                     />
 
                     <div className="flex flex-row my-3 ">
                       <label
                         className="text-amber-400 font-medium mt-4 "
-                        htmlFor="usernsme "
+                        htmlFor="file "
                       >
                         Upload your picture:
                       </label>

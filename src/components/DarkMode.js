@@ -7,8 +7,9 @@ export default function DarkMode() {
 
   return (
     <div className=" mr-2 ">
-      <Link to={"/darkfreelancersprofile"} className="">
+      <div className="">
         <Switch
+          onClick={() => document.documentElement.classList.add("dark")}
           checked={enabled}
           onChange={setEnabled}
           className={`${enabled ? "bg-blue-900" : "bg-amber-600"}
@@ -16,12 +17,13 @@ export default function DarkMode() {
         >
           <span className="sr-only bg-teal-700">Use setting</span>
           <span
+            onClick={() => document.documentElement.classList.remove("dark")}
             aria-hidden="true"
             className={`${enabled ? "translate-x-7" : "translate-x-1 "}
             pointer-events-none inline-block h-[24px] w-[24px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
           />
         </Switch>
-      </Link>
+      </div>
     </div>
   );
 }

@@ -31,7 +31,7 @@ export default function ProfileNavbar() {
   }, []);
 
   return (
-    <Disclosure as="nav" className="bg-amber-500 ">
+    <Disclosure as="nav" className="bg-amber-500 dark:bg-blue-700  ">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
@@ -77,6 +77,19 @@ export default function ProfileNavbar() {
               <div className=" flex justify-center items-center  pr-0 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {/* dark mode */}
                 <DarkMode />
+                {/* <button
+                  onClick={() => document.documentElement.classList.add("dark")}
+                >
+                  dark
+                </button>
+                <button
+                  onClick={() =>
+                    document.documentElement.classList.remove("dark")
+                  }
+                >
+                  light
+                </button>*/}
+
                 {/*Email */}
                 <EmailsButton />
                 {/*notification*/}

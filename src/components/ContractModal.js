@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Modal from "react-modal";
-
+import SecondLayout from "../layouts/SecondLayout";
 export default function ContractModal() {
   let subtitle;
   const [modalIsOpen, setIsOpen] = useState(false);
@@ -18,7 +18,7 @@ export default function ContractModal() {
     setIsOpen(false);
   }
   return (
-    <div>
+    <SecondLayout>
       <div className="container mx-auto flex flex-col justify-center items-center">
         <h2 className="text-3xl mt-10 text-amber-400 font-bold">
           Contract Rules
@@ -59,7 +59,7 @@ export default function ContractModal() {
           className="shadow-md hover:shadow-lg  bg-blue-900 hover:bg-blue-800 text-white px-6 py-4 rounded-lg text-xl font-semibold m-5"
           onClick={openModal}
         >
-          New Contract
+          Accept Contract Rules
         </button>
       </div>
       <Modal
@@ -124,6 +124,6 @@ export default function ContractModal() {
           </button>
         </div>
       </Modal>
-    </div>
+    </SecondLayout>
   );
 }

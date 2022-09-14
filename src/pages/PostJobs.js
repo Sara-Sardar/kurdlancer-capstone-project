@@ -5,6 +5,13 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
 export default function PostJobs() {
+  function handleUpload(ee) {
+    console.log("the uploaded file is:", EvalError.target.files[0]);
+    if (ee.target.files.length > 4) {
+      alert("you cannot upload more than 4 files ");
+    }
+  }
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [form, setForm] = useState({});
@@ -104,9 +111,10 @@ export default function PostJobs() {
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
                       type="text"
-                      name="usernsme"
-                      id="usernsme"
+                      name="text"
+                      id="text"
                       value="Enter your company name/individual name"
+                      required
                     />
                     <label
                       className="text-amber-400 font-medium"
@@ -117,9 +125,10 @@ export default function PostJobs() {
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
                       type="text"
-                      name="usernsme"
-                      id="usernsme"
+                      name="text"
+                      id="text"
                       value="Ali Kareem"
+                      required
                     />
                     <label
                       className="text-amber-400 font-medium"
@@ -130,9 +139,10 @@ export default function PostJobs() {
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
                       type="text"
-                      name="usernsme"
-                      id="usernsme"
+                      name="text"
+                      id="text"
                       value="Design and creatives"
+                      required
                     />
                     <label
                       className="text-amber-400 font-medium"
@@ -143,9 +153,10 @@ export default function PostJobs() {
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
                       type="text"
-                      name="usernsme"
-                      id="usernsme"
+                      name="text"
+                      id="text"
                       value="UX/UI Designer"
+                      required
                     />
 
                     {/*chakibka */}
@@ -161,24 +172,26 @@ export default function PostJobs() {
                         <input
                           className="w-24  bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                           type="text"
-                          name="usernsme"
-                          id="usernsme"
+                          name="text"
+                          id="text"
                           value="Erbil "
+                          required
                         />
                       </div>
                       <div className="col-span-2 ml-32 w-full">
                         <label
                           className="text-amber-400 font-medium"
                           htmlFor="usernsme "
+                          required
                         >
                           Zip Code:
                         </label>
                         <input
                           className=" w-24 bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
-                          type="text"
-                          name="usernsme"
-                          id="usernsme"
+                          type="number"
+                          name="number"
                           value="#####"
+                          required
                         />
                       </div>
                     </div>
@@ -192,9 +205,10 @@ export default function PostJobs() {
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
                       type="text"
-                      name="usernsme"
-                      id="usernsme"
+                      name="text"
+                      id="text"
                       value="Asia Hawala"
+                      required
                     />
                     <label
                       className="text-amber-400 font-medium "
@@ -205,9 +219,11 @@ export default function PostJobs() {
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
                       type="text"
-                      name="password"
-                      id="password"
-                      value="100$"
+                      name="text"
+                      id="text"
+                      value="100000 $"
+                      onChange={handleUpload}
+                      required
                     />
                     <label
                       className="text-amber-400 font-medium"
@@ -217,10 +233,11 @@ export default function PostJobs() {
                     </label>
                     <input
                       className='bg-gray-100 text-gray-400 p-1 font-light text-sm rounded-md mb-3 mt-1  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
-                      type="text"
-                      name="usernsme"
-                      id="usernsme"
+                      type="date"
+                      name="date"
+                      id="date"
                       value="1 Hour/ 1 Page"
+                      required
                     />
 
                     <div className="flex flex-row my-3 ">
@@ -230,14 +247,14 @@ export default function PostJobs() {
                       >
                         Upload sample of requied work:{" "}
                       </label>
-                      <button
+                      <input
+                        multiple
                         type="file"
                         id="myFile"
-                        name="filename"
-                        className="ml-12 lg:ml-20 px-2 py-1 mb-2 bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
-                      >
-                        Upload
-                      </button>
+                        name="file"
+                        className="file:ml-12 lg:ml-20 file:px-2 file:py-1 file:mb-2 file:bg-amber-400  file:text-md file:font-medium file:mt-4 hover:file:bg-amber-300 file:rounded-md file:text-white hover:text-white focus:file:outline-none focus:file:ring-2 focus:file:ring-offset-2 focus:file:ring-offset-amber-400 focus:file:ring-white"
+                        required
+                      />
                     </div>
                     <div className="flex flex-row my-3 ">
                       <label
@@ -251,6 +268,7 @@ export default function PostJobs() {
                         id="myFile"
                         name="filename"
                         className=" ml-12 lg:ml-20 px-2 py-1 mb-2 bg-amber-400  text-md font-medium mt-4 hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
+                        required
                       >
                         Upload
                       </button>
@@ -265,14 +283,15 @@ export default function PostJobs() {
                       className='bg-gray-100 rounded-md mb-3  text-gray-400  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"'
                       value=" Write your Description here..."
                       onChange={handleChange}
+                      required
                     />
 
-                    <Link
+                    <button
                       to="/jobs"
-                      className="bg-amber-400 mt-7 pl-12 lg:pl-28 px-3 py-2 text-lg font-medium  hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
+                      className="bg-amber-400 mt-7 pl-6 px-3 py-2 text-lg font-medium  hover:bg-amber-300 rounded-md text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-amber-400 focus:ring-white"
                     >
                       Post Job
-                    </Link>
+                    </button>
                   </form>
                 </div>
               </div>

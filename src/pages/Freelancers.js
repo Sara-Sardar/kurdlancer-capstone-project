@@ -1,6 +1,6 @@
 import Layout from "../layouts/MainLayout";
 import { Link } from "react-router-dom";
-import PaginatedItems from "../components/PaginatedItems";
+//import PaginatedItems from "../components/PaginatedItems";
 export default function Freelancers() {
   return (
     <Layout>
@@ -1106,7 +1106,7 @@ export default function Freelancers() {
             {/*end carasoul6*/}
           </div>
         </div>
-        <PaginatedItems />
+        {/*<PaginatedItems />*/}
       </div>
     </Layout>
   );

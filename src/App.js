@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "leaflet/dist/leaflet.css";
 //import NavBar from './components/NavBar';
 import { Route, Routes } from "react-router-dom";
 import Freelancers from "./pages/Freelancers";
